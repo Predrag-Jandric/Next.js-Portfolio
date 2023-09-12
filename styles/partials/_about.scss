@@ -1,0 +1,91 @@
+// modules used
+@use '../modules/global' as *;
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *; 
+
+/*-------------------------------
+        ABOUT SECTION
+-------------------------------*/
+
+.about {
+    @include flex(center, flex-start, row nowrap, 0);
+    color: $gray-text;
+
+    &__wrapper {
+        @include margin-padding(0 2rem, 2.5rem);
+        background-color: $pure-white;
+        box-shadow: $box-shadow;
+        border-radius: 5px;
+        max-width: 70rem;
+
+        .about__content {
+            @include flex(flex-start, flex-start, row nowrap, 3rem);
+
+            @media(max-width:1024px) {
+                flex-direction: column;
+            }
+
+            @media(max-width:480px) {
+                gap: 1.5rem;
+            }
+
+            .about__item {
+
+                &:first-child {
+                    @include flex(flex-start, center, row nowrap, 2rem);
+
+                    img {
+                        width: 12rem;
+                        border-radius: 50%;
+                    }
+
+                    @media(max-width:480px) {
+                        flex-direction: column;
+                        margin: 0px auto;
+                    }
+
+                    .about__personal-info {
+
+                        @media(max-width:480px) {
+                            text-align: center;
+                        }
+
+                        .about__p {
+                            margin-bottom: .8rem;
+                            font-weight: bold;
+
+                            span {
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                }
+
+                .about__title {
+                    @include text(1.3rem, auto, $headers-font);
+                    margin-bottom: 1rem;
+
+                    @media(max-width:480px) {
+                        text-align: center;
+                    }
+                }
+
+                .about__desc {
+                    line-height: 1.5;
+
+                    @media(max-width:480px) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .about__btn {
+            margin: 2.5rem auto 0 auto;
+
+            a {
+                width: 15rem;
+            }
+        }
+    }
+}

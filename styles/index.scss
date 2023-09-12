@@ -1,2 +1,14 @@
 
+/*-------------------------------
+            PARTIALS
+-------------------------------*/
+
+// @use 'partials/nav';
+// @use 'partials/header';
+@use 'partials/about';
 @use 'partials/skills';
+// @use 'partials/projects';
+// @use 'partials/footer';
+
+// styling for html page with the same name
+@use 'partials/thankYou';
