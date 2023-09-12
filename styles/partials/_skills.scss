@@ -1,0 +1,80 @@
+
+// modules used
+@use '../modules/global' as *;
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *; 
+
+/*-------------------------------
+        SKILLS SECTION
+-------------------------------*/
+
+.skills {
+    @include flex(center, center, column nowrap, 4rem);
+    padding: 2.5rem 0rem;
+    background: url('../../public/assets/skills-imgs/skills-bkgr.jpeg') no-repeat center;
+    
+    &__wrapper {
+        @include grid(center, 2rem, 8);
+        font-size: 1.1rem;
+        transform: rotateX('45deg');
+
+        @media(max-width:1200px) {
+        grid-template-columns: repeat(4, 1fr); 
+        }
+
+        @media(max-width:768px) {
+        grid-template-columns: repeat(2, 1fr); 
+        }
+
+        .skills__card {
+            @include flex(center, center, column nowrap, 0);
+
+            p {
+                color: $white;
+            }
+
+            .skills__global {
+                @include width-height(7rem, 7rem);
+            
+                @media(max-width:480px){
+                    @include width-height(5rem, 5rem);
+                }
+            }
+        }
+    }
+}
+
+
+/*--- skills section images ---*/
+
+.skills__html {
+    background: url('../../public/assets/skills-imgs/html.png') no-repeat center / cover;
+}
+
+// .skills__css {
+//     background: url('../../assets/img/skills-imgs/css.png') no-repeat center / cover;
+// }
+
+// .skills__js {
+//     background: url('../../assets/img/skills-imgs/js.png') no-repeat center / cover;
+// }
+
+// .skills__react {
+//     background: url('../../assets/img/skills-imgs/react.png') no-repeat center / cover;
+// }
+
+// .skills__redux {
+//     background: url('../../assets/img/skills-imgs/redux-toolkit.png') no-repeat center / cover;
+// }
+
+// .skills__sass {
+//     background: url('../../assets/img/skills-imgs/sass.png') no-repeat center / cover;
+// }
+
+// .skills__tailwind {
+//     background: url('../../assets/img/skills-imgs/tailwind.png') no-repeat center / cover;
+// }
+
+// .skills__git {
+//     background: url('../../assets/img/skills-imgs/git.png') no-repeat center / cover;
+// }
