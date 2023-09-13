@@ -1,12 +1,15 @@
-import devPhoto from '../public/assets/about/devPhoto.jpeg'
+import devPhoto from '/public/assets/about/devPhoto.jpeg'
+import Image from 'next/image'
+
 
 function About() {
     return (
         <section className="about">
             <div className="about__wrapper revealSectionJS">
-                <div className="about__content">
+
+                <section className="about__content">
                     <article className="about__item">
-                        <img src={devPhoto} alt="image missing" className="about__img" />
+                        <Image src={devPhoto} alt="image missing" className="about__img"></Image>
                         <div className="about__personal-info">
                             <p className="about__p">
                                 Name: <br /> <span className="about__span">Predrag Jandric</span>
@@ -24,6 +27,7 @@ function About() {
                             </p>
                         </div>
                     </article>
+
                     <article className="about__item">
                         <h3 className="about__title">
                             Progress-oriented Front End web developer
@@ -43,7 +47,8 @@ function About() {
                             developer, I'm excited to collaborate with like-minded professionals.
                         </p>
                     </article>
-                </div>
+
+                </section>
                 <button className="btn__global about__btn">
                     <a href="Predrag-Jandric-CV.pdf" download>
                         Download CV

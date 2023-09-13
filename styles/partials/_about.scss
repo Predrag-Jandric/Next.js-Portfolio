@@ -34,7 +34,7 @@
                 &:first-child {
                     @include flex(flex-start, center, row nowrap, 2rem);
 
-                    img {
+                    .about__img {
                         width: 12rem;
                         border-radius: 50%;
                     }

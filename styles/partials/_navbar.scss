@@ -1,0 +1,129 @@
+
+// modules used
+@use '../modules/global' as *;
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *; 
+
+/*-------------------------------
+        NAVBAR SECTION
+-------------------------------*/
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C2541;
+    height: 4.5rem;
+    padding: 0rem 3rem;
+    /* border: 1px solid red; */
+    background: linear-gradient(to right, #21262c, #0B2132);
+
+    &__logo {
+        @include width-height(3.3rem, 3.3rem);
+        border-radius: 5px;
+        margin: 10px;
+    }
+}
+
+.section-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms ease-in-out;
+}
+
+.section-nav.active ul {
+    right: -650px;
+}
+
+.nav__item {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+
+    &::before {
+        content: "";
+        @include position(absolute, 100%, auto, auto, 10%);
+        @include width-height(80%, 5%);
+        background: $yellow;
+        z-index: -10;
+        transform: scale(0);
+        transition: 0.3s ease-in-out;
+    }
+
+    &:hover {
+
+        &::before {
+            transform: scale(1);
+        }
+    }
+}
+
+
+.section-nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    transition: 200ms ease-in-out;
+    /* background-color: red; */
+}
+
+.icon {
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: white;
+    transition: 250ms ease-in-out;
+
+    &:hover {
+        transform: rotate(180deg);
+        color: $yellow;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .section-nav ul {
+        align-items: start;
+        flex-direction: column;
+        justify-content: start;
+        position: fixed;
+        top: 5rem;
+        right: 0px;
+        width: 25rem;
+        /* padding: 2rem; */
+        /* gap: 2rem; */
+        background-color: #323748;
+        height: 100vh;
+        font-size: 5rem;
+    }
+
+    .section-nav ul li a {
+        width: 100%;
+        padding: 1.7rem;
+
+        &:hover {
+            background-color: #191c24;
+            color: white;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .section-mobile {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .section-nav ul{
+        width: 80vw;
+    }
+}
+
+
