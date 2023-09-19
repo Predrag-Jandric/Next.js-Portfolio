@@ -1,6 +1,6 @@
 import devPhoto from '/public/assets/about/devPhoto.jpeg'
 import Image from 'next/image'
-
+import React from 'react'
 
 function About() {
     return (
@@ -40,7 +40,8 @@ function About() {
                             <a
                                 href="https://www.youtube.com/@predragjandric/videos"
                                 target="_blank"
-                                id="link__properties__global">
+                                id="link__properties__global"
+                            >
                                 YouTube tutorials
                             </a>{" "}
                             for my own benefit. As I continuously work towards becoming a better

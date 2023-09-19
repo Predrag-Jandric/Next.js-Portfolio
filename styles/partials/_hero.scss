@@ -1,0 +1,75 @@
+// modules used
+@use '../modules/global' as *;
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *; 
+
+/*-------------------------------
+        HERO SECTION
+-------------------------------*/
+
+.hero {
+    height: 90vh;
+    position: relative;
+    background: url('../../public/assets/hero/header-bg.jpeg') no-repeat center / cover;
+    z-index: 100;
+    overflow: hidden;
+    @include flex(center, flex-start, column nowrap, 0);
+    
+    &__wrapper {
+        width: 55%;
+        margin-left: 7rem;
+
+        @media(max-width:768px){
+            @include flex(center, center, column nowrap, 0);
+            width: 93%;
+            text-align: center;
+            margin:  0 auto;
+        }
+
+        .hero__title {
+            @include text(2.6rem, $yellow, $headers-font);
+
+            @media(max-width:768px){
+                @include text(2.2rem, $yellow, $headers-font);
+            }
+        }
+
+        .hero__p {
+            @include text(1.33rem, $white);
+            margin: 1.5rem 0;
+
+            @media(max-width:768px){
+                @include text(1.2rem, $white);
+            }
+        }
+
+        .hero__span {
+            color: $yellow;
+        }
+
+        // planets
+        .hero__earth, .hero__moon .hero__star {
+
+            @media(max-width:768px){
+                display: none;
+            }
+        }
+
+        .hero__earth {
+            @include position(absolute, 0%, -40%, auto, auto);
+            width: 30%;
+        }
+        
+        .hero__moon {
+            @include position(absolute, -20%, -10%, auto, auto);
+            width: 3%;
+        }
+
+        .hero__star{
+            @include position(absolute, $top: -100%, $right: auto, $bottom: auto, $left: 150%);
+            width: 15rem;
+            z-index: -10;
+        }
+    }
+}
+
