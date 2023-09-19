@@ -9,7 +9,8 @@ function About() {
 
                 <section className="about__content">
                     <article className="about__item">
-                        <Image src={devPhoto} alt="image missing" className="about__img"></Image>
+                        <Image src={devPhoto} alt="image missing" className="about__img" />
+
                         <div className="about__personal-info">
                             <p className="about__p">
                                 Name: <br /> <span className="about__span">Predrag Jandric</span>
@@ -39,8 +40,7 @@ function About() {
                             <a
                                 href="https://www.youtube.com/@predragjandric/videos"
                                 target="_blank"
-                                id="link__properties__global"
-                            >
+                                id="link__properties__global">
                                 YouTube tutorials
                             </a>{" "}
                             for my own benefit. As I continuously work towards becoming a better
