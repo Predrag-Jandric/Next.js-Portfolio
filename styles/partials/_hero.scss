@@ -46,30 +46,6 @@
         .hero__span {
             color: $yellow;
         }
-
-        // planets
-        .hero__earth, .hero__moon .hero__star {
-
-            @media(max-width:768px){
-                display: none;
-            }
-        }
-
-        .hero__earth {
-            @include position(absolute, 0%, -40%, auto, auto);
-            width: 30%;
-        }
-        
-        .hero__moon {
-            @include position(absolute, -20%, -10%, auto, auto);
-            width: 3%;
-        }
-
-        .hero__star{
-            @include position(absolute, $top: -100%, $right: auto, $bottom: auto, $left: 150%);
-            width: 15rem;
-            z-index: -10;
-        }
     }
 }
 
