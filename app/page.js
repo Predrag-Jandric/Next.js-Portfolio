@@ -4,6 +4,7 @@ import Projects from '../components/Projects'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
+import TestingComp from '../components/TestingComp'
 
 export default function Home() {
   return (
@@ -12,13 +13,15 @@ export default function Home() {
       <Navbar/>
       <Hero/>
 
-      {/* <h2 class="aboutAnchorDestinationJS" id="section__title__global">About</h2>
+      {/* <TestingComp/> */}
+
+      <h2 class="aboutAnchorDestinationJS" id="section__title__global">About</h2>
       <About />
       <h2 id="section__title__global">Skills</h2>
       <Skills />
       <h2 class="projectsAnchorDestinationJS" id="section__title__global">Projects</h2>
       <Projects />
-      <Footer/> */}
+      <Footer/>
 
 
     </main>

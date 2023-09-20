@@ -10,18 +10,12 @@
 
 .skills {
     @include flex(center, center, column nowrap, 4rem);
-    padding: 2.5rem 0rem;
-    background: url('../../public/assets/skills/skills-bkgr.jpeg') no-repeat center;
+    padding: 4rem 0rem;
+    background-color: $testing;
     
     &__wrapper {
-        @include grid(center, 2rem, 8);
+        @include grid(center, 2rem, 5);
         font-size: 1.1rem;
-        transform: rotateX('45deg');
-        
-
-        @media(max-width:1200px) {
-        grid-template-columns: repeat(4, 1fr); 
-        }
 
         @media(max-width:768px) {
         grid-template-columns: repeat(2, 1fr); 
@@ -36,6 +30,9 @@
 
             .skills__global {
                 @include width-height(7rem, 7rem);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
             
                 @media(max-width:480px){
                     @include width-height(5rem, 5rem);
@@ -49,33 +46,41 @@
 /*--- skills section images ---*/
 
 .skills__html {
-    background: url('../../public/assets/skills/html.png') no-repeat center / cover;
+    background: url('../../public/assets/skills/html.png');
 }
 
-// .skills__css {
-//     background: url('../../assets/img/skills-imgs/css.png') no-repeat center / cover;
-// }
+.skills__css {
+    background: url('../../public/assets/skills/css.png');
+}
 
-// .skills__js {
-//     background: url('../../assets/img/skills-imgs/js.png') no-repeat center / cover;
-// }
+.skills__js {
+    background: url('../../public/assets/skills/js.png');
+}
 
-// .skills__react {
-//     background: url('../../assets/img/skills-imgs/react.png') no-repeat center / cover;
-// }
+.skills__react {
+    background: url('../../public/assets/skills/react.png');
+}
 
-// .skills__redux {
-//     background: url('../../assets/img/skills-imgs/redux-toolkit.png') no-repeat center / cover;
-// }
+.skills__redux {
+    background: url('../../public/assets/skills/redux-toolkit.png');
+}
 
-// .skills__sass {
-//     background: url('../../assets/img/skills-imgs/sass.png') no-repeat center / cover;
-// }
+.skills__nextjs {
+    background: url('../../public/assets/skills/nextjs.png');
+}
 
-// .skills__tailwind {
-//     background: url('../../assets/img/skills-imgs/tailwind.png') no-repeat center / cover;
-// }
+.skills__sass {
+    background: url('../../public/assets/skills/sass.png');
+}
 
-// .skills__git {
-//     background: url('../../assets/img/skills-imgs/git.png') no-repeat center / cover;
-// }
+.skills__tailwind {
+    background: url('../../public/assets/skills/tailwind.png');
+}
+
+.skills__git {
+    background: url('../../public/assets/skills/git.png');
+}
+
+.skills__figma {
+    background: url('../../public/assets/skills/figma.png');
+}

@@ -4,6 +4,7 @@
 - optimize all <img> with <Image/>
 - refacture classnames taht need to be refactured, in jsx and sass
 - make sure user gets custom screen when error happens. this will be done simply using nextJS routing
+- add new animations using framer motion on all sections
 
 ========= COMPONENTS ================
 
