@@ -1,9 +1,12 @@
 "use client"
 
-// imports
+// next.js imports
 import React from "react"
-import { motion } from "framer-motion"
 import Image from "next/image";
+
+// animation imports
+import { motion } from "framer-motion"
+import { skillsAnimationVariants } from "../animations";
 
 // data for map method
 const skillsMap = [
@@ -19,35 +22,16 @@ const skillsMap = [
     { name: "Figma", skillsImageUrl: "/assets/skills/figma.png" },
 ];
 
-// framer animation instructions
-const animationVariants = {
-    initial: {
-        y: 70,
-        opacity: 0,
-    },
-    animate: (index) => {
-        return {
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.2,
-                delay: 0.10 * index,
-            }
-        }
-    },
-}
-
 function Skills() {
-
     return (
         <section className="skills">
             <article className="skills_wrapper">
 
-                {/* mapped data */}
+                {/* mapping over "skillsMap" to create imgs and text */}
                 {skillsMap.map((skill, index) => (
                     <motion.div
                         className="skills_card"
-                        variants={animationVariants}
+                        variants={skillsAnimationVariants}
                         initial="initial"
                         whileInView="animate"
                         viewport={{ once: true, }}

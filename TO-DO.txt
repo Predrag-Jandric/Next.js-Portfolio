@@ -24,8 +24,6 @@
 * === SKILLS SECTION DONE, DO FINAL CHECKS BEFORE PRODUCTION
 
 * PROJECTS
-- in projects section make cards wider and by default 2 in a row then 1 on mobile
-- in projects section add icons that will represent technologies used in the project
 - in projects section add gifs so that when user hovers over a card gif becomes active
 - in projects section add hover effect which will be border color but not full, that will circle around border (itself) 
 

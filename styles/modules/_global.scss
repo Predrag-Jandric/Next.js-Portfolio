@@ -96,7 +96,7 @@ img {
 
 
 // every section title (about, skills, projects, testimonials)
-#section__title__global {
+.section__title__global {
     @include text(3rem, $gray-text, $headers-font);
     text-align: center;
     letter-spacing: 2px;

@@ -10,13 +10,18 @@ export default function Home() {
   return (
     <main >
 
-      {/* <Navbar/> */}
-      {/* <Hero/> */}
-      {/* <About /> */}
+      <Navbar />
+      <Hero />
+      <h2 className="section__title__global">About</h2>
+      <About />
+      <h2 className="section__title__global">Skills</h2>
       <Skills />
-      {/* <Projects /> */}
-      {/* <Footer/> */}
+      <h2 className="section__title__global">Projects</h2>
+      <Projects />
+      <Footer />
       {/* <TestingComp/> */}
+
+
 
 
     </main>
@@ -24,8 +29,3 @@ export default function Home() {
 }
 
 
-{/* <h2 class="aboutAnchorDestinationJS" id="section__title__global">About</h2>
-
-<h2 id="section__title__global">Skills</h2>
-
-<h2 class="projectsAnchorDestinationJS" id="section__title__global">Projects</h2> */}

@@ -12,64 +12,56 @@
     text-align: center;
     color: $gray-text;
 
-    &__wrapper {
-        @include grid(center, 3rem, 4);
+    .projects__wrapper {
+        @include grid(center, 6rem, 2);
         background-color: transparent;
-        
-        
-        @media(max-width:1400px) {
-            grid-template-columns: repeat(2, 1fr);
+        padding: 5rem 0;
+    
+        @media(max-width:1200px) {
+            @include grid(center, 3rem, 1);
         }
-
-        @media(max-width:768px) {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
+    
         .projects__item-global {
-            width: 18.75rem;
+            @include flex(center, center, column nowrap, 2.5rem);
+            width: 27.5rem;
             box-shadow: $box-shadow;
             border-radius: $border-radius;
+            background: $pure-white;
+            
 
-
-
-            // all project pictures (thumbnails)
-            .projects__one__img {
-                background: url('../../public/assets/projects/card-valve.jpeg') no-repeat center / cover;
+            @media(max-width:500px){
+                width: 95%;
             }
 
-            .projects__two__img {
-                background: url('../../public/assets/projects/card-react.png') no-repeat center / cover;
+            .projects__image{
+                
             }
-
-            .projects__three__img {
-                background: url("../../public/assets/projects/card-portfolio.jpeg") no-repeat center / cover;
-            }
-
-            .projects__four__img {
-                background: url("../../public/assets/projects/card-bootstrap.jpeg") no-repeat center / cover;
-            }
-
-            .projects__global__img {
-                height: 18.75rem;
-                border-radius: 5px 5px 0 0;
-            }
-
+    
             .projects__text {
-                padding: 2rem 1.3rem;
-                border-radius: 0 0 5px 5px;
-                background: $pure-white;
-
-                .projects__h3 {
-                    @include text(1.4rem, auto, $headers-font);
-                    margin: 1rem 0;
+                @include flex(center, center, column nowrap, 1rem);
+                padding: 0 1.3rem;
+                text-align: center;
+    
+                &__h3 {
+                    @include text(1.7rem, auto, $headers-font);
                 }
-
-                .projects__p {
-                    margin: 1.3rem 0 3rem 0;
+            }
+    
+            .projects__techUsed{
+                @include flex(center, center, column nowrap, 0.5rem);
+                font-size: 1.3rem;
+                
+                &__images {
+                    @include flex(center, center, row nowrap, 0.5rem);
                 }
+            }
+    
+            .projects__btn__container {
+                @include flex(center, center, row nowrap, 1.8rem);
+                margin-bottom: 2.5rem;
 
-                .projects__btn__container {
-                    @include flex(center, center, row nowrap, 1rem);
+                @media(max-width:500px){
+                    @include flex(center, center, column nowrap, 1.5rem);
                 }
             }
         }
