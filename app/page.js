@@ -12,15 +12,15 @@ export default function Home() {
 
       <Navbar/>
       <Hero/>
-      <Skills />
 
 
-      {/* <h2 class="aboutAnchorDestinationJS" id="section__title__global">About</h2>
+      <h2 class="aboutAnchorDestinationJS" id="section__title__global">About</h2>
       <About />
       <h2 id="section__title__global">Skills</h2>
+      <Skills />
       <h2 class="projectsAnchorDestinationJS" id="section__title__global">Projects</h2>
       <Projects />
-      <Footer/> */}
+      <Footer/>
       {/* <TestingComp/> */}
 
 

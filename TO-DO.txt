@@ -20,8 +20,7 @@
 * ABOUT
 = this section is done i think
 
-* SKILLS
-- implement animation for skills sections icons 
+* === SKILLS SECTION DONE, DO FINAL CHECKS BEFORE PRODUCTION
 
 * PROJECTS
 - in projects section make cards wider and by default 2 in a row then 1 on mobile
