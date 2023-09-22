@@ -23,64 +23,14 @@
 
         .skills__card {
             @include flex(center, center, column nowrap, 0);
+            color: $white;
 
-            p {
-                color: $white;
-            }
+            .skills__image {
 
-            .skills__global {
-                @include width-height(7rem, 7rem);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            
                 @media(max-width:480px){
                     @include width-height(5rem, 5rem);
                 }
             }
         }
     }
-}
-
-
-/*--- skills section images ---*/
-
-.skills__html {
-    background: url('../../public/assets/skills/html.png');
-}
-
-.skills__css {
-    background: url('../../public/assets/skills/css.png');
-}
-
-.skills__js {
-    background: url('../../public/assets/skills/js.png');
-}
-
-.skills__react {
-    background: url('../../public/assets/skills/react.png');
-}
-
-.skills__redux {
-    background: url('../../public/assets/skills/redux-toolkit.png');
-}
-
-.skills__nextjs {
-    background: url('../../public/assets/skills/nextjs.png');
-}
-
-.skills__sass {
-    background: url('../../public/assets/skills/sass.png');
-}
-
-.skills__tailwind {
-    background: url('../../public/assets/skills/tailwind.png');
-}
-
-.skills__git {
-    background: url('../../public/assets/skills/git.png');
-}
-
-.skills__figma {
-    background: url('../../public/assets/skills/figma.png');
 }

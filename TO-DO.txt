@@ -2,7 +2,7 @@
 
 - check whether all "header" keywords are replaced with "hero" keywords. check in global.scss too.
 - optimize all <img> with <Image/>
-- refacture classnames taht need to be refactured, in jsx and sass
+- refacture classnames that need to be refactured, in jsx and sass
 - make sure user gets custom screen when error happens. this will be done simply using nextJS routing
 - add new animations using framer motion on all sections
 
@@ -22,7 +22,6 @@
 
 * SKILLS
 - implement animation for skills sections icons 
-- change bg for skills section, it should be solid color
 
 * PROJECTS
 - in projects section make cards wider and by default 2 in a row then 1 on mobile
@@ -31,7 +30,6 @@
 - in projects section add hover effect which will be border color but not full, that will circle around border (itself) 
 
 * FOOTER
-- change bg for footer section, it should be solid color
 - use 3rd party to make form functional
 
 ========= SPECIAL ================

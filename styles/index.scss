@@ -7,8 +7,12 @@
 @use 'partials/hero';
 @use 'partials/about';
 @use 'partials/skills';
-@use 'partials/projects';
+// @use 'partials/projects';
 @use 'partials/footer';
+
+// TESTING
+@use 'partials/_TestingComp';
+
 
 // styling for html page with the same name
 @use 'partials/thankYou';

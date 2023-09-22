@@ -3,7 +3,7 @@ import React from 'react'
 function Projects() {
     return (
         <section className="projects">
-            <div className="projects__wrapper revealSectionJS">
+            <div className="projects__wrapper">
                 <article className="projects__item-global">
                     <div className="projects__one__img projects__global__img"></div>
                     <div className="projects__text">
