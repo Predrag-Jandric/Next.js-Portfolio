@@ -15,7 +15,7 @@
         @include margin-padding(0 2rem, 2.5rem);
         background-color: $pure-white;
         box-shadow: $box-shadow;
-        border-radius: 5px;
+        border-radius: $border-radius;
         max-width: 70rem;
 
         .about__content {

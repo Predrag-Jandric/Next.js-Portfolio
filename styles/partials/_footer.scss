@@ -18,7 +18,7 @@
         @include margin-padding(0 2rem, 2.5rem);
         max-width: 70rem;
         background-color: $pure-white;
-        border-radius: 5px;
+        border-radius: $border-radius;
         box-shadow: $box-shadow;
 
         @media(max-width:768px){
@@ -46,7 +46,7 @@
                 input {
                     @include width-height(100%, 2.188rem);
                     @include margin-padding(0 0 1rem 0, 10px);
-                    border-radius: 5px;
+                    border-radius: $border-radius;
                     border: 1px $gray-border solid;
                     display: block;
                 }

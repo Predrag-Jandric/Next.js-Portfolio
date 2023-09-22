@@ -5,16 +5,16 @@ import { motion } from "framer-motion"
 import Image from "next/image";
 
 const skillsMap = [
-    { name: "Html", imageUrl: "/assets/skills/html.png" },
-    { name: "Css", imageUrl: "/assets/skills/css.png" },
-    { name: "JavaScript", imageUrl: "/assets/skills/js.png" },
-    { name: "React", imageUrl: "/assets/skills/react.png" },
-    { name: "Redux Toolkit", imageUrl: "/assets/skills/redux-toolkit.png" },
-    { name: "Next.js", imageUrl: "/assets/skills/nextjs.png" },
-    { name: "Sass", imageUrl: "/assets/skills/sass.png" },
-    { name: "Tailwind", imageUrl: "/assets/skills/tailwind.png" },
-    { name: "Git", imageUrl: "/assets/skills/git.png" },
-    { name: "Figma", imageUrl: "/assets/skills/figma.png" },
+    { name: "Html", skillsImageUrl: "/assets/skills/html.png" },
+    { name: "Css", skillsImageUrl: "/assets/skills/css.png" },
+    { name: "JavaScript", skillsImageUrl: "/assets/skills/js.png" },
+    { name: "React", skillsImageUrl: "/assets/skills/react.png" },
+    { name: "Redux Toolkit", skillsImageUrl: "/assets/skills/redux-toolkit.png" },
+    { name: "Next.js", skillsImageUrl: "/assets/skills/nextjs.png" },
+    { name: "Sass", skillsImageUrl: "/assets/skills/sass.png" },
+    { name: "Tailwind", skillsImageUrl: "/assets/skills/tailwind.png" },
+    { name: "Git", skillsImageUrl: "/assets/skills/git.png" },
+    { name: "Figma", skillsImageUrl: "/assets/skills/figma.png" },
 ];
 
 const animationVariants = {
@@ -51,7 +51,7 @@ function Skills() {
                         key={index}
                     >
                         <Image
-                            src={skill.imageUrl}
+                            src={skill.skillsImageUrl}
                             width={112} height={112}
                             alt="image missing"
                             className="skills__image"

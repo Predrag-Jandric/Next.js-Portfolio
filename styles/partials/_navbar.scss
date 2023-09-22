@@ -22,7 +22,7 @@
 
     &__logo {
         @include width-height(3.3rem, 3.3rem);
-        border-radius: 5px;
+        border-radius: $border-radius;
         margin: 10px;
     }
 }
