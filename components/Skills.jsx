@@ -1,9 +1,11 @@
 "use client"
 
+// imports
 import React from "react"
 import { motion } from "framer-motion"
 import Image from "next/image";
 
+// data for map method
 const skillsMap = [
     { name: "Html", skillsImageUrl: "/assets/skills/html.png" },
     { name: "Css", skillsImageUrl: "/assets/skills/css.png" },
@@ -17,6 +19,7 @@ const skillsMap = [
     { name: "Figma", skillsImageUrl: "/assets/skills/figma.png" },
 ];
 
+// framer animation instructions
 const animationVariants = {
     initial: {
         y: 70,
@@ -38,11 +41,12 @@ function Skills() {
 
     return (
         <section className="skills">
-            <div className="skills__wrapper">
+            <article className="skills_wrapper">
 
+                {/* mapped data */}
                 {skillsMap.map((skill, index) => (
-                    <motion.article
-                        className="skills__card"
+                    <motion.div
+                        className="skills_card"
                         variants={animationVariants}
                         initial="initial"
                         whileInView="animate"
@@ -54,12 +58,13 @@ function Skills() {
                             src={skill.skillsImageUrl}
                             width={112} height={112}
                             alt="image missing"
-                            className="skills__image"
+                            className="skills_card_image"
                         />
-                        <p className="skills__p">{skill.name}</p>
-                    </motion.article>
+                        <p className="skills_card_p">{skill.name}</p>
+                    </motion.div>
                 ))}
-            </div>
+
+            </article>
         </section>
     )
 }

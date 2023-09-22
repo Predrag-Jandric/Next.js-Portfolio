@@ -10,18 +10,13 @@ export default function Home() {
   return (
     <main >
 
-      <Navbar/>
-      <Hero/>
-
-
-      
-      <About />
-      
+      {/* <Navbar/> */}
+      {/* <Hero/> */}
+      {/* <About /> */}
       <Skills />
-      
-      <Projects />
-      <Footer/>
-      <TestingComp/>
+      {/* <Projects /> */}
+      {/* <Footer/> */}
+      {/* <TestingComp/> */}
 
 
     </main>

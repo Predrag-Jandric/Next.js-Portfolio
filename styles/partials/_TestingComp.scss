@@ -21,8 +21,7 @@
         background: $pure-white;
         
         .projects__image{
-            width: 300px;
-            height: 300px;
+            
         }
 
         .projects__text {
@@ -33,6 +32,15 @@
 
             &__h3 {
                 @include text(1.7rem, auto, $headers-font);
+            }
+        }
+
+        .projects__techUsed{
+            @include flex(center, center, column nowrap, 0.5rem);
+            font-size: 1.3rem;
+            
+            &__images {
+                @include flex(center, center, row nowrap, 0.5rem);
             }
         }
 
