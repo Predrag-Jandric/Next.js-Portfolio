@@ -1,6 +1,14 @@
+"use client"
+
+// next.js imports
 import React from 'react'
 import Image from 'next/image'
 
+// animation imports
+import { motion } from "framer-motion"
+import { footerAnimationVariants } from "../animations";
+
+// data for map method
 const footerMap = [
     {
         linkUrl: "https://www.linkedin.com/in/predrag-jandric/",
@@ -14,13 +22,17 @@ const footerMap = [
         linkUrl: "https://www.youtube.com/@predragjandric/videos",
         footerImageUrl: "/assets/all-social-icons/youtube.png"
     },
-
 ]
 
 function Footer() {
     return (
         <footer className="footer" id="contactAnchor">
-            <section className="footer__wrapper revealSectionJS">
+            <motion.section
+                variants={footerAnimationVariants}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true, }}
+                className="footer__wrapper">
                 <form className="footer__item footer__item__one" id="myform" action="https://formsubmit.co/predrag.jandric.bg@gmail.com" method="POST">
                     <h3 className="footer__title">Message Me</h3>
 
@@ -50,15 +62,15 @@ function Footer() {
                     <div className="footer__social icons__global">
                         {/* mapping over "footerMap" to create imgs */}
                         {footerMap.map((item, index) => (
-                            <a key={index} href={item.linkUrl} target="_blank">
+                            <a key={index} href={item.linkUrl} target="_blank" rel="noopener noreferrer" >
                                 <Image src={item.footerImageUrl} alt="image missing" width={45} height={45} />
                             </a>
                         ))}
                     </div>
                 </article>
-            </section>
+            </motion.section>
 
-        {/* "to top" */}
+            {/* "to top" */}
             <section className="footer__copyright">
                 <p className="footer__copyright__p">&copy; Copyright Predrag Jandric. All Rights Reserved</p>
                 <a className="footer__copyright__a" href="#">To Top</a>

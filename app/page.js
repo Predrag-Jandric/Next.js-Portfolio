@@ -17,7 +17,7 @@ export default function Home() {
       <h2 className="section__title__global">Skills</h2>
       <Skills />
       <h2 className="section__title__global">Projects</h2>
-      <Projects />
+      {/* <Projects /> */}
       <Footer />
       {/* <TestingComp/> */}
 
