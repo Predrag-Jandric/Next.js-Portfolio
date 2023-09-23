@@ -12,12 +12,9 @@ export default function Home() {
 
       <Navbar />
       <Hero />
-      <h2 className="section__title__global">About</h2>
       <About />
-      <h2 className="section__title__global">Skills</h2>
       <Skills />
-      <h2 className="section__title__global">Projects</h2>
-      {/* <Projects /> */}
+      <Projects />
       <Footer />
       {/* <TestingComp/> */}
 

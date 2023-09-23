@@ -6,15 +6,13 @@
 export const skillsAnimationVariants = {
     initial: {
         scale: 0,
-        opacity: 0,
     },
     animate: (index) => {
         return {
             scale: 1,
-            opacity: 1,
             transition: {
                 duration: 0.2,
-                delay: 0.10 * index,
+                delay: 0.08 * index,
             }
         }
     },

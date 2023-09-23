@@ -5,7 +5,6 @@
 - make sure user gets custom screen when error happens. this will be done simply using nextJS routing
 - add new animations using framer motion on all sections
 - replace all buttons perhaps
-- check whether space between headers and content is even
 
 ========= COMPONENTS ================
 

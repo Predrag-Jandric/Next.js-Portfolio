@@ -70,69 +70,74 @@ const projectsMap = [
 
 function Projects() {
     return (
-        <section className="projects">
-            <div className="projects__wrapper">
+        <>
+            {/* section title */}
+            <h2 className="section__title__global">Projects</h2>
 
-                {/* mapping over "projectsMap" to create cards */}
-                {projectsMap.map((project, index) => (
-                    <motion.section
-                        className="projects__item-global"
-                        key={index}
-                        variants={projectsAnimationVariants}
-                        initial="initial"
-                        whileInView="animate"
-                        viewport={{ once: true, }}
-                        custom={index}
-                    >
-                        <Image
-                            src={project.projectsImageUrl}
-                            width={300} height={300}
-                            alt='image missing'
-                            className='projects__image'
-                        />
-                        {/* card text */}
-                        <article className="projects__text">
-                            <h3 className="projects__text__h3">{project.name}</h3>
-                            <p className="projects__text__p">{project.description}</p>
-                        </article>
+            <section className="projects">
+                <div className="projects__wrapper">
 
-                        {/* card technologies used info */}
-                        <article className='projects__techUsed'>
-                            <h4 className='projects__techUsed__header'>
-                                Technologies used
-                            </h4>
+                    {/* mapping over "projectsMap" to create cards */}
+                    {projectsMap.map((project, index) => (
+                        <motion.section
+                            className="projects__item-global"
+                            key={index}
+                            variants={projectsAnimationVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{ once: true, }}
+                            custom={index}
+                        >
+                            <Image
+                                src={project.projectsImageUrl}
+                                width={300} height={300}
+                                alt='image missing'
+                                className='projects__image'
+                            />
+                            {/* card text */}
+                            <article className="projects__text">
+                                <h3 className="projects__text__h3">{project.name}</h3>
+                                <p className="projects__text__p">{project.description}</p>
+                            </article>
 
-                            <div className="projects__techUsed__images">
-                                {/* mapping over images of technologies used */}
-                                {project.TechUsedUrl.map((techImageUrl, techIndex) => (
-                                    <Image
-                                        key={techIndex}
-                                        src={techImageUrl}
-                                        width={50}
-                                        height={50}
-                                        alt='image missing'
-                                    />
-                                ))}
-                            </div>
-                        </article>
+                            {/* card technologies used info */}
+                            <article className='projects__techUsed'>
+                                <h4 className='projects__techUsed__header'>
+                                    Technologies used
+                                </h4>
 
-                        {/*  buttons for code and preview links */}
-                        <article className="projects__btn__container">
-                            <button className="btn__global">
-                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                                    Code
-                                </a>
-                            </button>
-                            <button className="btn__global">
-                                <a href={project.previewLink} target="_blank" rel="noopener noreferrer">
-                                    Preview
-                                </a>
-                            </button>
-                        </article>
-                    </motion.section>
-                ))}
-            </div>
-        </section>
+                                <div className="projects__techUsed__images">
+                                    {/* mapping over images of technologies used */}
+                                    {project.TechUsedUrl.map((techImageUrl, techIndex) => (
+                                        <Image
+                                            key={techIndex}
+                                            src={techImageUrl}
+                                            width={50}
+                                            height={50}
+                                            alt='image missing'
+                                        />
+                                    ))}
+                                </div>
+                            </article>
+
+                            {/*  buttons for code and preview links */}
+                            <article className="projects__btn__container">
+                                <button className="btn__global">
+                                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                        Code
+                                    </a>
+                                </button>
+                                <button className="btn__global">
+                                    <a href={project.previewLink} target="_blank" rel="noopener noreferrer">
+                                        Preview
+                                    </a>
+                                </button>
+                            </article>
+                        </motion.section>
+                    ))}
+                </div>
+            </section>
+        </>
     )
 }
 

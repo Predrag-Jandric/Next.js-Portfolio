@@ -60,7 +60,7 @@ function Footer() {
                     <p>My Email is: <a id="link__properties__global" href="mailto: predrag.jandric.bg@gmail.com">predrag.jandric.bg@gmail.com</a></p>
 
                     <div className="footer__social icons__global">
-                        {/* mapping over "footerMap" to create imgs */}
+                        {/* mapping over "footerMap" to create link imgs */}
                         {footerMap.map((item, index) => (
                             <a key={index} href={item.linkUrl} target="_blank" rel="noopener noreferrer" >
                                 <Image src={item.footerImageUrl} alt="image missing" width={45} height={45} />

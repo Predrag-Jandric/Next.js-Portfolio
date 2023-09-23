@@ -15,7 +15,6 @@
     .projects__wrapper {
         @include grid(center, 6rem, 2);
         background-color: transparent;
-        padding: 1rem 0;
     
         @media(max-width:1200px) {
             @include grid(center, 3rem, 1);

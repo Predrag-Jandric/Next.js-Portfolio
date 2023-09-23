@@ -24,32 +24,37 @@ const skillsMap = [
 
 function Skills() {
     return (
-        <section className="skills">
-            <article className="skills_wrapper">
+        <>
+            {/* section title */}
+            <h2 className="section__title__global">Skills</h2>
 
-                {/* mapping over "skillsMap" to create imgs and text */}
-                {skillsMap.map((skill, index) => (
-                    <motion.div
-                        className="skills_card"
-                        variants={skillsAnimationVariants}
-                        initial="initial"
-                        whileInView="animate"
-                        viewport={{ once: true, }}
-                        custom={index}
-                        key={index}
-                    >
-                        <Image
-                            src={skill.skillsImageUrl}
-                            width={112} height={112}
-                            alt="image missing"
-                            className="skills_card_image"
-                        />
-                        <p className="skills_card_p">{skill.name}</p>
-                    </motion.div>
-                ))}
+            <section className="skills">
+                <article className="skills_wrapper">
 
-            </article>
-        </section>
+                    {/* mapping over "skillsMap" to create imgs and text */}
+                    {skillsMap.map((skill, index) => (
+                        <motion.div
+                            className="skills_card"
+                            variants={skillsAnimationVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{ once: true, }}
+                            custom={index}
+                            key={index}
+                        >
+                            <Image
+                                src={skill.skillsImageUrl}
+                                width={112} height={112}
+                                alt="image missing"
+                                className="skills_card_image"
+                            />
+                            <p className="skills_card_p">{skill.name}</p>
+                        </motion.div>
+                    ))}
+
+                </article>
+            </section>
+        </>
     )
 }
 
