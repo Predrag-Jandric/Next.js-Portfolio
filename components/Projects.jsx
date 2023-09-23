@@ -11,7 +11,7 @@ import { projectsAnimationVariants } from "../animations";
 // data for map method
 const projectsMap = [
     {
-        title: 'Valve Corp. Clone',
+        name: 'Valve Corp. Clone',
         description:
             "I was inspired by this ValveCorp webpage, to recreate it mobile first. The end result is a faithful clone of the original webpage which I made with HTML, JS and styled with Sass.",
         projectsImageUrl: "/assets/projects/card-valve.jpeg",
@@ -25,7 +25,7 @@ const projectsMap = [
         previewLink: 'https://valve-clone.netlify.app/',
     },
     {
-        title: 'React online store',
+        name: 'React online store',
         description:
             "Ecommerce simulation project that uses modern React features such as Advanced state management, mapping data from API, Routing, reusable components and more.",
         projectsImageUrl: "/assets/projects/card-react.png",
@@ -39,7 +39,7 @@ const projectsMap = [
         previewLink: 'https://peppy-khapse-f13bb3.netlify.app/',
     },
     {
-        title: 'Portfolio',
+        name: 'Portfolio',
         description:
             "A showcase of my skills and experience as a developer. It took months of dedication to create and design. React version is coming soon. dasdasdasdasdasd asd asda  asd asdasd",
         projectsImageUrl: "/assets/projects/card-portfolio.jpeg",
@@ -53,7 +53,7 @@ const projectsMap = [
         previewLink: 'javascript:void(0)', // You can set this to null or an appropriate value
     },
     {
-        title: 'Bootstrap webpage',
+        name: 'Bootstrap webpage',
         description:
             "This project was an opportunity to put my design and coding skills to the test. I focused on creating a clean, visually appealing layout in Bootstrap with UI/UX rules in mind.",
         projectsImageUrl: "/assets/projects/card-bootstrap.jpeg",
@@ -92,7 +92,7 @@ function Projects() {
                         />
                         {/* card text */}
                         <article className="projects__text">
-                            <h3 className="projects__text__h3">{project.title}</h3>
+                            <h3 className="projects__text__h3">{project.name}</h3>
                             <p className="projects__text__p">{project.description}</p>
                         </article>
 

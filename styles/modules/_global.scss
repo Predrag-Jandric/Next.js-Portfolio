@@ -144,25 +144,6 @@ img {
 }
 
 
-// Header section special properties for JavaScript appear effect
-.revealHeaderJS{
-    // @include revealJS(relative, translateX(-3rem), 0, all 1s ease-in-out, 5px);
-}
-
-.revealHeaderJS.active{
-    // @include revealJS(relative, translateX(0rem), 1, all 1s ease-in-out, 0px);
-}
-
-// About, Footer and Projects sections appear effect on scroll 
-.revealSectionJS{
-    // @include revealJS(relative, translateY(3rem), 0, all 0.6s ease-in-out, 5px);
-  }
-
-.revealSectionJS.active{
-    // @include revealJS(relative, translateY(0rem), 1, all 0.6s ease-in-out, 0px);
-  }
-
-
 //  Pre-loader styling
 .preloader {
     @include position(fixed, 0, auto, auto, 0);

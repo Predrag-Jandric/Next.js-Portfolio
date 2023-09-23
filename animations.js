@@ -5,12 +5,12 @@
 // animations for SKILLS section
 export const skillsAnimationVariants = {
     initial: {
-        y: 70,
+        scale: 0,
         opacity: 0,
     },
     animate: (index) => {
         return {
-            y: 0,
+            scale: 1,
             opacity: 1,
             transition: {
                 duration: 0.2,

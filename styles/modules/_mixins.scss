@@ -1,9 +1,9 @@
-// module within a module because
-// var "$text-font" is used on line 23 
+// module within a module because mixin "text" is using $text-font
 @use 'variables' as *;
 
-// MIXINS MODULE
+// --- MIXINS MODULE ---
 
+// used for setting the flexbox layouts
 @mixin flex($justify: flex-start, $align: center, $flow: row nowrap, $gap: 0) {
     display: flex;
     justify-content: $justify;
@@ -12,6 +12,7 @@
     gap: $gap;
 }
 
+// used for setting the grid layouts
 @mixin grid($place-items, $gap, $cols) {
     display: grid;
     place-items: $place-items;
@@ -19,6 +20,7 @@
     grid-template-columns: repeat($cols, 1fr);
 }
 
+// used for setting the element positioning
 @mixin position($position, $top: auto, $right: auto, $bottom: auto, $left: auto) {
     position: $position;
     top: $top;
@@ -27,6 +29,7 @@
     left: $left;
 }
 
+// used for styling text, border and typography
 @mixin text($size, $color, $font-family: $text-font, $weight: normal, $border-radius: none, $border: none) {
     font-size: $size;
     color: $color;
@@ -36,22 +39,16 @@
     border: $border;
 }
 
+// used for setting element width and height
 @mixin width-height($width, $height) {
     width: $width;
     height: $height;
 }
 
+// used for setting element margin and padding
 @mixin margin-padding($margin, $padding) {
     margin: $margin;
     padding: $padding;
-}
-
-@mixin revealJS($position, $transform, $opacity, $transition, $blur) {
-    position: $position;
-    transform: $transform;
-    opacity: $opacity;
-    transition: $transition;
-    filter: blur($blur);
 }
 
 

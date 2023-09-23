@@ -10,7 +10,7 @@
 .hero {
     height: 90vh;
     position: relative;
-    background: url('../../public/assets/hero/header-bg.jpeg') no-repeat center / cover;
+    background: url('../../public/assets/hero/hero-bg.jpeg') no-repeat center / cover;
     z-index: 100;
     overflow: hidden;
     @include flex(center, flex-start, column nowrap, 0);
