@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 // animation imports
 import { motion } from "framer-motion"
-import { footerAnimationVariants } from "../animations";
+import { generalAnimationVariants } from "../animations";
 
 // data for map method
 const footerMap = [
@@ -26,9 +26,9 @@ const footerMap = [
 
 function Footer() {
     return (
-        <footer className="footer" id="contactAnchor">
+        <footer className="footer">
             <motion.section
-                variants={footerAnimationVariants}
+                variants={generalAnimationVariants}
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true, }}
@@ -57,7 +57,7 @@ function Footer() {
                 <article className="footer__item footer__item__two">
                     <h3 className="footer__title">Get in Touch</h3>
                     <p>I would love to hear your feedback and opinion on it. If you want to connect with me or check out more of my work you can find me on LinkedIn, GitHub and my Youtube channel. Thank you for visiting!</p>
-                    <p>My Email is: <a id="link__properties__global" href="mailto: predrag.jandric.bg@gmail.com">predrag.jandric.bg@gmail.com</a></p>
+                    <p>My Email is: <a className="link__properties__global" href="mailto: predrag.jandric.bg@gmail.com">predrag.jandric.bg@gmail.com</a></p>
 
                     <div className="footer__social icons__global">
                         {/* mapping over "footerMap" to create link imgs */}

@@ -1,6 +1,16 @@
-import devPhoto from '/public/assets/about/devPhoto.jpeg'
+"use client"
+
+// next.js imports
 import Image from 'next/image'
 import React from 'react'
+
+// animation imports
+import { motion } from "framer-motion"
+import { generalAnimationVariants } from "../animations";
+
+// images
+import devPhoto from '/public/assets/about/devPhoto.jpeg'
+
 
 function About() {
     return (
@@ -9,7 +19,12 @@ function About() {
             <h2 className="section__title__global">About</h2>
 
             <section className="about">
-                <div className="about__wrapper revealSectionJS">
+                <motion.div
+                    variants={generalAnimationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true, }}
+                    className="about__wrapper">
 
                     <section className="about__content">
                         <article className="about__item">
@@ -23,7 +38,7 @@ function About() {
                                     Email: <br />{" "}
                                     <span className="about__span">
                                         <a
-                                            id="link__properties__global"
+                                            className="link__properties__global"
                                             href="mailto:predrag.jandric.bg@gmail.com"
                                         >
                                             predrag.jandric.<br />bg@gmail.com
@@ -44,7 +59,7 @@ function About() {
                                 <a
                                     href="https://www.youtube.com/@predragjandric/videos"
                                     target="_blank"
-                                    id="link__properties__global"
+                                    className="link__properties__global"
                                 >
                                     YouTube tutorials
                                 </a>{" "}
@@ -59,7 +74,7 @@ function About() {
                             Download CV
                         </a>
                     </button>
-                </div>
+                </motion.div>
             </section>
         </>
     )

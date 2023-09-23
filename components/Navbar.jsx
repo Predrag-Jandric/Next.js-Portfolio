@@ -22,7 +22,7 @@ function Navbar() {
             <section className={`section-nav ${isMobileActive ? 'active' : ''}`}>
                 <ul className="nav__list">
                     <li className="nav__item"><a href="#" className="nav__link">about</a></li>
-                    <li className="nav__item"><a href="#" className="nav__link" id="projectsAnchorJS">projects</a></li>
+                    <li className="nav__item"><a href="#" className="nav__link">projects</a></li>
                     <li className="nav__item"><a href="#" className="nav__link">contact</a></li>
                 </ul>
             </section>

@@ -47,7 +47,7 @@ function Hero() {
 
   return (
     <header className="hero">
-      <section className="hero__wrapper revealHeaderJS">
+      <section className="hero__wrapper">
         <h1 className="hero__title">Hi, my name is Predrag</h1>
         <p className="hero__p">Let's make the internet interesting! I am eager to fulfill my potential as <span className="hero__span">{currentWord}</span> and create outstanding websites that deliver an exceptional user experience.</p>
 

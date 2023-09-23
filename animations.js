@@ -30,14 +30,14 @@ export const projectsAnimationVariants = {
             opacity: 1,
             transition: {
                 duration: 0.3,
-                delay: 0.3 * index,
+                delay: 0.2 * index,
             }
         }
     },
 }
 
-// animations for FOOTER section
-export const footerAnimationVariants = {
+// GENERAL animations 
+export const generalAnimationVariants = {
     initial: {
         y: 70,
         opacity: 0,
@@ -46,8 +46,8 @@ export const footerAnimationVariants = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: 0.3,
-            delay: 0.3
+            duration: 0.4,
+            delay: 0.2
         }
     },
 }
