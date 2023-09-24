@@ -16,7 +16,7 @@
 
 * HERO
 - add effect on a span that will change content every sec, like: "I am {lorem/ispus/dolor}" these words will change in their span container every second, find a way to achieve this 
-- add 3d planet earth that is rotating by itself on X axis only by default but the user can also rotate it
+- add star like in old portfolio
 
 
 * ABOUT

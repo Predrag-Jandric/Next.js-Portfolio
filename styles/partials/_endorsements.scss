@@ -1,0 +1,49 @@
+// modules used
+@use '../modules/global' as *;
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *; 
+
+/*-------------------------------
+        ENDORSEMENTS SECTION
+-------------------------------*/
+
+.swiper {
+  max-width: 70rem;
+  height: 25rem;
+  border-radius: $border-radius;
+  // border: 1px solid red;
+
+
+    .swiper-slide {
+      @include flex(flex-start, center, column nowrap, 0.5rem);
+        text-align: center;
+        padding: 4rem 10rem;
+        background: $pure-white;
+
+
+        & img {
+          @include width-height(5.5rem, 5.5rem);
+          border-radius: 50%;
+        }
+
+        &_name {
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+
+        &_job {
+          margin-top: -0.5rem;
+          color: $gray-text;
+          font-style: italic;
+        }
+
+        &_message {
+          
+
+        }
+    }
+}
+  
+
+
+  

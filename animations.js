@@ -14,7 +14,7 @@ export const skillsAnimationVariants = {
             scale: 1,
             transition: {
                 duration: 0.2,
-                delay: 0.08 * index,
+                delay: 0.05 * index,
             }
         }
     },
@@ -32,7 +32,7 @@ export const projectsAnimationVariants = {
             scale: 1,
             transition: {
                 duration: 0.3,
-                delay: 0.2 * index,
+                delay: 0.10 * index,
             }
         }
     },

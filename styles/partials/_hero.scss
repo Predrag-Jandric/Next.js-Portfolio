@@ -16,11 +16,10 @@
     @include flex(flex-start, center, row nowrap, 0);
     
     &__wrapper {
-        width: 55%;
-        margin-left: 7rem;
-        border: 1px solid red;
+        width: 55vw;
+        margin-left: 8rem;
         z-index: 100;
-
+        // border: 1px dotted blue;
 
         @media(max-width:768px){
             @include flex(center, center, column nowrap, 0);
@@ -52,14 +51,8 @@
     }
 
     .spline {
-        border: 1px solid red;
-        // width: 100vw !important;
-        @include position(absolute, auto, auto, auto, 25%);
-        // @include flex(flex-start, flex-start, column nowrap, 0);
-        // padding-left: 25vw;
-        // width: 400px !important;
-        // height: 400px !important;
-        // width: min-content !important;
+        @include position(absolute, 5%, auto, auto, 25%);
+        border: 1px dotted gray;
     }
 }
 
