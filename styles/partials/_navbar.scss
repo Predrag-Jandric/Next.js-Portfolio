@@ -91,14 +91,15 @@
         flex-direction: column;
         justify-content: start;
         position: fixed;
-        top: 5rem;
+        top: 5.1rem;
         right: 0px;
         width: 25rem;
         /* padding: 2rem; */
         /* gap: 2rem; */
         background-color: #323748;
-        height: 100vh;
+        height: 90.5vh;
         font-size: 5rem;
+        z-index: 999;
     }
 
     .section-nav ul li a {

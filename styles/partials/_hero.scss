@@ -13,11 +13,14 @@
     background: url('../../public/assets/hero/hero-bg.jpeg') no-repeat center / cover;
     z-index: 100;
     overflow: hidden;
-    @include flex(center, flex-start, column nowrap, 0);
+    @include flex(flex-start, center, row nowrap, 0);
     
     &__wrapper {
         width: 55%;
         margin-left: 7rem;
+        border: 1px solid red;
+        z-index: 100;
+
 
         @media(max-width:768px){
             @include flex(center, center, column nowrap, 0);
@@ -46,6 +49,17 @@
         .hero__span {
             color: $yellow;
         }
+    }
+
+    .spline {
+        border: 1px solid red;
+        // width: 100vw !important;
+        @include position(absolute, auto, auto, auto, 25%);
+        // @include flex(flex-start, flex-start, column nowrap, 0);
+        // padding-left: 25vw;
+        // width: 400px !important;
+        // height: 400px !important;
+        // width: min-content !important;
     }
 }
 

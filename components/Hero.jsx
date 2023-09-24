@@ -8,6 +8,10 @@ import Image from 'next/image'
 import { motion } from "framer-motion"
 import { heroAnimationVariants } from "../animations";
 
+// import TestingComp from './TestingComp'
+import Spline from '@splinetool/react-spline';
+
+
 
 // data for map method
 const heroMap = [
@@ -27,29 +31,11 @@ const heroMap = [
 
 function Hero() {
 
-  const words = ["ambitious", "dedicated"];
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [currentWord, setCurrentWord] = useState(words[currentWordIndex]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 1000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  useEffect(() => {
-    setCurrentWord(words[currentWordIndex]);
-  }, [currentWordIndex]);
-
   return (
     <header className="hero">
       <section className="hero__wrapper">
         <h1 className="hero__title">Hi, my name is Predrag</h1>
-        <p className="hero__p">Let's make the internet interesting! I am eager to fulfill my potential as <span className="hero__span">{currentWord}</span> and create outstanding websites that deliver an exceptional user experience.</p>
+        <p className="hero__p">Let's make the internet interesting! I am eager to fulfill my potential as <span className="hero__span">lorem</span> and create outstanding websites that deliver an exceptional user experience.</p>
 
         {/* icons */}
         <article className="hero__icons icons__global">
@@ -59,12 +45,10 @@ function Hero() {
               <Image src={item.heroImageUrl} className='hero__img' alt="image missing" width={45} height={45} />
             </a>
           ))}
-
         </article>
-
-        {/* place for new 3D planet */}
-
       </section>
+
+      <Spline className='spline' scene="https://prod.spline.design/nkT3xlgUhE7VCAuv/scene.splinecode" />
     </header>
 
   )
@@ -72,5 +56,3 @@ function Hero() {
 
 export default Hero
 
-
-// add particles as bg using "ts-particles npm package"

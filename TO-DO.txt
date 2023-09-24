@@ -6,6 +6,7 @@
 - add new animations using framer motion on all sections
 - replace all buttons perhaps
 - add icons to all btns
+- check how download resume btn in ABOUT section works
 
 ========= COMPONENTS ================
 
@@ -16,16 +17,15 @@
 * HERO
 - add effect on a span that will change content every sec, like: "I am {lorem/ispus/dolor}" these words will change in their span container every second, find a way to achieve this 
 - add 3d planet earth that is rotating by itself on X axis only by default but the user can also rotate it
-- perhaps add particles using "ts-particles" npm package
+
 
 * ABOUT
-= this section is done i think
+redo some content
 
 * === SKILLS SECTION DONE, DO FINAL CHECKS BEFORE PRODUCTION
 
 * PROJECTS
 - in projects section add gifs so that when user hovers over a card gif becomes active
-- in projects section add hover effect which will be border color but not full, that will circle around border (itself) 
 
 * FOOTER
 - use 3rd party to make form functional

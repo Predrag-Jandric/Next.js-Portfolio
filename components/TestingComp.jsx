@@ -1,41 +1,42 @@
 "use client"
 
+
 // THIS COMPONENT IS USED FOR TESTING
 //  FEATURES BEFORE IMPLEMENTATION
 
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 
-function TestingComp() {
-  const words = ["ambitious", "smart", "dedicated"];
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [currentWord, setCurrentWord] = useState(words[currentWordIndex]);
+// function TestingComp() {
+//   const words = ["ambitious", "smart", "dedicated"];
+//   const [currentWordIndex, setCurrentWordIndex] = useState(0);
+//   const [currentWord, setCurrentWord] = useState(words[currentWordIndex]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 1000);
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+//     }, 1000);
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+//     return () => {
+//       clearInterval(interval);
+//     };
+//   }, []);
 
-  useEffect(() => {
-    setCurrentWord(words[currentWordIndex]);
-  }, [currentWordIndex]);
+//   useEffect(() => {
+//     setCurrentWord(words[currentWordIndex]);
+//   }, [currentWordIndex]);
 
-  return (
-    <main>
+//   return (
+//     <main>
 
-        <p className="hero__p">
-          I am <span className="changing-text">{currentWord} developer</span>
-        </p>
+//         <p className="hero__p">
+//           I am <span className="changing-text">{currentWord} developer</span>
+//         </p>
 
-    </main>
-  );
-}
+//     </main>
+//   );
+// }
 
-export default TestingComp;
+// export default TestingComp;
 
 
 

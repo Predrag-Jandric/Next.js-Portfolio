@@ -5,10 +5,12 @@
 // animations for SKILLS section
 export const skillsAnimationVariants = {
     initial: {
+        opacity: 0,
         scale: 0,
     },
     animate: (index) => {
         return {
+            opacity: 1,
             scale: 1,
             transition: {
                 duration: 0.2,
@@ -21,13 +23,13 @@ export const skillsAnimationVariants = {
 // animations for PROJECTS section
 export const projectsAnimationVariants = {
     initial: {
-        y: 70,
         opacity: 0,
+        scale: 0,
     },
     animate: (index) => {
         return {
-            y: 0,
             opacity: 1,
+            scale: 1,
             transition: {
                 duration: 0.3,
                 delay: 0.2 * index,
