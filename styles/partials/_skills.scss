@@ -16,6 +16,7 @@
     &_wrapper {
         @include grid(center, 2rem, 5);
         font-size: 1.1rem;
+        text-align: center;
 
         @media(max-width:768px) {
         grid-template-columns: repeat(2, 1fr); 
@@ -24,13 +25,6 @@
         .skills_card {
             @include flex(center, center, column nowrap, 0);
             color: $white;
-
-            &_image {
-
-                @media(max-width:480px){
-                    @include width-height(5rem, 5rem);
-                }
-            }
         }
     }
 }

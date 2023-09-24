@@ -7,18 +7,29 @@
         ENDORSEMENTS SECTION
 -------------------------------*/
 
+.endorsements_wrapper{
+  padding: 0 2rem;
+  // border: 1px solid red;
+}
+
 .swiper {
   max-width: 70rem;
-  height: 25rem;
   border-radius: $border-radius;
   // border: 1px solid red;
 
 
     .swiper-slide {
-      @include flex(flex-start, center, column nowrap, 0.5rem);
+      @include flex(flex-start, center, column nowrap, 0.7rem);
         text-align: center;
-        padding: 4rem 10rem;
+        padding: 3rem 10rem;
         background: $pure-white;
+        color: $gray-text;
+        // border: 1px solid red;
+
+
+        @media screen and (max-width: 768px){
+          padding: 3rem 4rem;
+        }
 
 
         & img {
@@ -33,12 +44,11 @@
 
         &_job {
           margin-top: -0.5rem;
-          color: $gray-text;
           font-style: italic;
         }
 
         &_message {
-          
+          font-size: 1.2rem;
 
         }
     }

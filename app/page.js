@@ -11,14 +11,14 @@ export default function Home() {
   return (
     <main >
 
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Hero /> */}
-      {/* <About /> */}
-      {/* <Skills /> */}
+      <About />
+      <Skills />
       {/* <Projects /> */}
-      {/* <Footer /> */}
-      {/* <TestingComp/> */}
       <Endorsements />
+      <Footer />
+      {/* <TestingComp/> */}
 
 
 
