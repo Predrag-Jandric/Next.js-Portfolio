@@ -14,17 +14,18 @@ import devPhoto from '/public/assets/about/devPhoto.jpeg'
 
 function About() {
     return (
-        <>
+        <motion.div
+            variants={generalAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, }}
+            id='aboutAnchor'
+        >
             {/* section title */}
             <h2 className="section__title__global">About</h2>
 
             <section className="about">
-                <motion.div
-                    variants={generalAnimationVariants}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{ once: true, }}
-                    className="about__wrapper">
+                <div className="about__wrapper">
 
                     <section className="about__content">
                         <article className="about__item">
@@ -74,9 +75,9 @@ function About() {
                             Download CV
                         </a>
                     </button>
-                </motion.div>
+                </div>
             </section>
-        </>
+        </motion.div>
     )
 }
 

@@ -1,6 +1,23 @@
 // THIS FILE CONTAINS ANIMATIONS FOR ALL SECTIONS.
 // MODIFY ANIMATIONS HERE AND NOWHERE ELSE.
 
+// animations for HERO section
+export const heroAnimationVariants = {
+    initial: {
+        opacity: 0,
+        x: 100,
+    },
+    animate: (index) => {
+        return {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 0.2,
+                delay: 0.05 * index,
+            }
+        }
+    },
+}
 
 // animations for SKILLS section
 export const skillsAnimationVariants = {
@@ -49,7 +66,7 @@ export const generalAnimationVariants = {
         opacity: 1,
         transition: {
             duration: 0.4,
-            delay: 0.2
+            delay: 0.3
         }
     },
 }

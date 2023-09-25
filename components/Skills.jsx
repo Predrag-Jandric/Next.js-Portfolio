@@ -7,6 +7,8 @@ import Image from "next/image";
 // animation imports
 import { motion } from "framer-motion"
 import { skillsAnimationVariants } from "../animations";
+import { generalAnimationVariants } from "../animations";
+
 
 // data for map method
 const skillsMap = [
@@ -24,7 +26,12 @@ const skillsMap = [
 
 function Skills() {
     return (
-        <>
+        <motion.div
+            variants={generalAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, }}>
+
             {/* section title */}
             <h2 className="section__title__global">Skills</h2>
 
@@ -54,7 +61,7 @@ function Skills() {
 
                 </article>
             </section>
-        </>
+        </motion.div>
     )
 }
 

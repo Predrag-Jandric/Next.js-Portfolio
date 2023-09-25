@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import { MdOutlineClose, MdOutlineMenu } from "react-icons/md"
 import logo from '/public/assets/navbar/logo.jpeg'
+import CustomScrollLink from '../scrollLink';
 
 function Navbar() {
 
@@ -21,7 +22,19 @@ function Navbar() {
             <section className={`navbar__section ${isMobileActive ? 'active' : ''}`}>
                 <ul className="navbar__section__ul">
                     <li className="navbar__section__ul__li">
-                        <a href="#" className="navbar__section__ul__li__a">about</a>
+
+                    <CustomScrollLink
+                            to="aboutAnchor"
+                            spy={true}
+                            smooth={true}
+                            offset={-180} 
+                            duration={300}
+                            className="navbar__section__ul__li__a"
+                        >
+                            about
+                        </CustomScrollLink>
+
+                        {/* <a href="#aboutAnchor" title="about" className="navbar__section__ul__li__a">about</a> */}
                     </li>
                     <li className="navbar__section__ul__li">
                         <a href="#" className="navbar__section__ul__li__a">projects</a>

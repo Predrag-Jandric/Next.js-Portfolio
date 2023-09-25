@@ -51,6 +51,8 @@ function Endorsements() {
             whileInView="animate"
             viewport={{ once: true, }}
             className="endorsements_wrapper">
+
+            {/* section title */}
             <h2 className="section__title__global">Endorsements</h2>
 
             <Swiper

@@ -9,6 +9,8 @@
 - check how download resume btn in ABOUT section works
 - reduce padding on X axis when resizing on most of the sections
 - see whether to include section title in animation or not 
+- use "@media screen and" or just "@media"
+- rename all "px" inside media queries into "rem"
 
 ========= COMPONENTS ================
 

@@ -19,7 +19,11 @@
         width: 55vw;
         margin-left: 8rem;
         z-index: 100;
-        // border: 1px dotted blue;
+        // border: 1px solid blue;
+
+        @media(max-width:1200px){
+            margin-left: 4rem;
+        }
 
         @media(max-width:768px){
             @include flex(center, center, column nowrap, 0);
@@ -50,9 +54,23 @@
         }
     }
 
-    .spline {
+    &__earth {
         @include position(absolute, 5%, auto, auto, 25%);
         // border: 1px dotted gray;
+
+        @media(max-width:768px){
+            display: none;
+        }
     }
 }
 
+.arrowDown {
+    // background-color: red ;
+    // color: $yellow;
+    color: $link-color;
+
+    // transform: rotate(90deg);
+    width: 5rem;
+    height: 5rem;
+    @include position(absolute, 88%, 50%, auto, auto);
+}
