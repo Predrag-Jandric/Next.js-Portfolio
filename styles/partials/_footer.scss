@@ -15,7 +15,7 @@
 
     &__wrapper {
         @include flex(flex-start, flex-start, row nowrap, 3rem);
-        @include margin-padding(0 2rem, 2.5rem);
+        @include margin-padding(0 1.3rem, 2.5rem);
         max-width: 70rem;
         background-color: $pure-white;
         border-radius: $border-radius;

@@ -7,17 +7,18 @@ import Hero from '../components/Hero'
 import TestingComp from '../components/TestingComp'
 import Endorsements from '../components/Endorsements'
 
+
 export default function Home() {
   return (
     <main >
 
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
-      <About />
-      <Skills />
+      <Navbar />
+      <Hero />
+      {/* <About /> */}
+      {/* <Skills /> */}
       {/* <Projects /> */}
-      <Endorsements />
-      <Footer />
+      {/* <Endorsements /> */}
+      {/* <Footer /> */}
       {/* <TestingComp/> */}
 
 

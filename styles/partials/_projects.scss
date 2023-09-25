@@ -13,26 +13,28 @@
     color: $gray-text;
 
     .projects__wrapper {
-        @include grid(center, 6rem, 2);
+        @include grid(center, 5rem, 2);
         background-color: transparent;
+        margin: 0 1.3rem;
     
         @media(max-width:1200px) {
             @include grid(center, 3rem, 1);
         }
     
         .projects__item-global {
-            @include flex(center, center, column nowrap, 2.5rem);
-            width: 27.5rem;
+            @include flex(center, center, column nowrap, 2rem);
+            width: 32.5rem;
             box-shadow: $box-shadow;
             border-radius: $border-radius;
             background: $pure-white;
+            overflow: hidden;
             
 
             @media(max-width:500px){
-                width: 95%;
+                width: 100%;
             }
 
-            .projects__image{
+            .projects__image {
                 
             }
     
@@ -46,7 +48,7 @@
                 }
             }
     
-            .projects__techUsed{
+            .projects__techUsed {
                 @include flex(center, center, column nowrap, 0.5rem);
                 font-size: 1.3rem;
                 

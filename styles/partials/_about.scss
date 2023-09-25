@@ -12,7 +12,7 @@
     color: $gray-text;
 
     &__wrapper {
-        @include margin-padding(0 2rem, 2.5rem);
+        @include margin-padding(0 1.3rem, 2.5rem);
         background-color: $pure-white;
         box-shadow: $box-shadow;
         border-radius: $border-radius;

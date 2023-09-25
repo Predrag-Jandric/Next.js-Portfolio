@@ -56,7 +56,7 @@ function Footer() {
                 {/* footer call to action */}
                 <article className="footer__item footer__item__two">
                     <h3 className="footer__title">Get in Touch</h3>
-                    <p>I would love to hear your feedback and opinion on it. If you want to connect with me or check out more of my work you can find me on LinkedIn, GitHub and my Youtube channel. Thank you for visiting!</p>
+                    <p>Your feedback and insights are highly appreciated. If you'd like to connect with me or explore more of my work, you can find me on LinkedIn, GitHub, and my YouTube channel. Thank you for visiting!"</p>
                     <p>My Email is: <a className="link__properties__global" href="mailto: predrag.jandric.bg@gmail.com">predrag.jandric.bg@gmail.com</a></p>
 
                     <div className="footer__social icons__global">
@@ -71,10 +71,10 @@ function Footer() {
             </motion.section>
 
             {/* "to top" */}
-            <section className="footer__copyright">
-                <p className="footer__copyright__p">&copy; Copyright Predrag Jandric. All Rights Reserved</p>
+            {/* <section className="footer__copyright">
+                <p className="footer__copyright__p">&copy; Copyright Predrag Jandric. All Rights Reserved</p> */}
                 <a className="footer__copyright__a" href="#">To Top</a>
-            </section>
+            {/* </section> */}
         </footer>
 
     )

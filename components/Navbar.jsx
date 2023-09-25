@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { MdOutlineClose, MdOutlineMenu } from "react-icons/md"
-import logo from '/public/assets/navbar/logo.JPEG'
+import logo from '/public/assets/navbar/logo.jpeg'
 
 function Navbar() {
 
@@ -18,20 +18,25 @@ function Navbar() {
 
             <Image className='navbar__logo' src={logo} alt="logo"></Image>
 
-
-            <section className={`section-nav ${isMobileActive ? 'active' : ''}`}>
-                <ul className="nav__list">
-                    <li className="nav__item"><a href="#" className="nav__link">about</a></li>
-                    <li className="nav__item"><a href="#" className="nav__link">projects</a></li>
-                    <li className="nav__item"><a href="#" className="nav__link">contact</a></li>
+            <section className={`navbar__section ${isMobileActive ? 'active' : ''}`}>
+                <ul className="navbar__section__ul">
+                    <li className="navbar__section__ul__li">
+                        <a href="#" className="navbar__section__ul__li__a">about</a>
+                    </li>
+                    <li className="navbar__section__ul__li">
+                        <a href="#" className="navbar__section__ul__li__a">projects</a>
+                    </li>
+                    <li className="navbar__section__ul__li">
+                        <a href="#" className="navbar__section__ul__li__a">contact</a>
+                    </li>
                 </ul>
             </section>
 
             {/* mobile version */}
-            <section onClick={handleClick} className='section-mobile'>
+            <section onClick={handleClick} className='navbar__section__mobile'>
                 {isMobileActive ?
-                    <MdOutlineMenu className='icon' />
-                    : <MdOutlineClose className='icon' />
+                    <MdOutlineMenu className='navbar__section__mobile__icon' />
+                    : <MdOutlineClose className='navbar__section__mobile__icon' />
                 }
             </section>
         </nav>

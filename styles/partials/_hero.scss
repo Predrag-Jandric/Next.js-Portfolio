@@ -52,7 +52,7 @@
 
     .spline {
         @include position(absolute, 5%, auto, auto, 25%);
-        border: 1px dotted gray;
+        // border: 1px dotted gray;
     }
 }
 
