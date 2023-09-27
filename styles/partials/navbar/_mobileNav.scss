@@ -1,0 +1,46 @@
+// modules used
+@use '../../modules/global' as *;
+@use '../../modules/mixins' as *;
+@use '../../modules/variables' as *; 
+
+/*-------------------------------
+        MOBILE NAV SECTION
+-------------------------------*/
+
+
+.mobile__navbar {
+  @include position(fixed, 0, 0, 0, 0);
+    width: 400px;
+    background: linear-gradient(to bottom, #21262c, #0B2132);
+    padding-top: 100px;
+    transform: translateX(100vw);
+    will-change: transform;
+    z-index: 101;
+
+    &__ul {
+      @include flex(flex-start, flex-start, column nowrap, 0.5rem);
+      padding: 15px;
+
+      &__li {
+        color: $yellow;
+        display: block;
+        transform-origin: 20px 50%;
+        font-size: 48px;
+        padding: 10px;
+        will-change: transform, opacity, filter;
+      }
+    }
+  }
+
+  button {
+    @include position(absolute, 1.1rem, 2rem, auto, auto);
+    @include width-height(50px, 50px);
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 102;
+
+    @media (min-width: 768px) {
+      display: none;
+      }
+  }
+

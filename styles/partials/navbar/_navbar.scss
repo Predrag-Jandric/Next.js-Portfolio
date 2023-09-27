@@ -1,8 +1,8 @@
 
 // modules used
-@use '../modules/global' as *;
-@use '../modules/mixins' as *;
-@use '../modules/variables' as *; 
+@use '../../modules/global' as *;
+@use '../../modules/mixins' as *;
+@use '../../modules/variables' as *; 
 
 /*-------------------------------
         NAVBAR SECTION
@@ -12,11 +12,11 @@
     @include flex(space-between, center, row nowrap, 0);
     height: 10vh;
     padding: 0rem 8rem;
-    /* border: 1px solid red; */
+    // border: 1px solid red; 
     background: linear-gradient(to right, #21262c, #0B2132);
 
     @media(max-width:1200px){
-        padding: 0rem 4rem;
+        padding: 0rem 2rem;
     }
     
     &__logo {
@@ -27,28 +27,13 @@
 
     &__section{
 
-        &.active ul {
-            right: -650px;
-        }
-
         &__ul {
             @include flex(center, center, row nowrap, 0);
             transition: 200ms ease-in-out;
 
             @media screen and (max-width: 768px) {
-                // @include flex(flex-start, flex-start, column nowrap, 0);
-                // @include position(fixed, 10%, 0, auto, auto);
-                // width: 25rem;
-                // background-color: #323748;
-                // height: 100vh;
-                // font-size: 5rem;
-                // z-index: 999;
                 display: none;
             }
-
-            // @media screen and (max-width: 450px){
-            //     width: 80vw;
-            // }
 
             &__li {
                 position: relative;
@@ -76,40 +61,10 @@
                     padding: 10px 20px;
                     font-size: 1.3rem;
                     transition: 200ms ease-in-out;
-
-                    @media screen and (max-width: 768px) {
-                        width: 100%;
-                        // padding: 1.7rem;
-                    
-                        &:hover {
-                            background-color: #191c24;
-                            color: white;
-                        }
-                    }
                 }
             }
         }
     }
-
-    // &__section__mobile {
-
-    //     @media screen and (min-width: 768px) {
-    //            display: none;
-    //     }
-
-    //     &__icon {
-    //         font-size: 2.3rem;
-    //         cursor: pointer;
-    //         color: white;
-    //         transition: 250ms ease-in-out;
-    //         z-index: 999;
-        
-    //         &:hover {
-    //             transform: rotate(180deg);
-    //             color: $yellow;
-    //         }
-    //     }
-    // }
 }
 
 

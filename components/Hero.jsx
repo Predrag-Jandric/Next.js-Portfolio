@@ -9,9 +9,7 @@ import { motion } from "framer-motion"
 
 // import 
 import Spline from '@splinetool/react-spline';
-import Navbar from './Navbar';
-import { MdExpandMore } from "react-icons/md";
-
+import Navbar from './navbar/Navbar';
 
 // data for map method
 const heroMap = [
@@ -68,9 +66,6 @@ function Hero() {
 
         <Spline className='hero__earth' scene="https://prod.spline.design/nkT3xlgUhE7VCAuv/scene.splinecode" />
 
-        <a href="#aboutAnchor" className='test link__properties__global'>
-          <MdExpandMore className='arrowDown' />
-        </a>
       </header>
 
     </>

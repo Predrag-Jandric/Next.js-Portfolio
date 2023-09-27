@@ -63,14 +63,3 @@
         }
     }
 }
-
-.arrowDown {
-    // background-color: red ;
-    // color: $yellow;
-    color: $link-color;
-
-    // transform: rotate(90deg);
-    width: 5rem;
-    height: 5rem;
-    @include position(absolute, 88%, 50%, auto, auto);
-}
