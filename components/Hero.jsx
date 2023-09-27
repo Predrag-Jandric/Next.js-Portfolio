@@ -6,6 +6,7 @@ import Image from 'next/image'
 
 // animation imports
 import { motion } from "framer-motion"
+import { heroVariants } from '../animations'
 
 // import 
 import Spline from '@splinetool/react-spline';
@@ -37,30 +38,30 @@ function Hero() {
         <section
           className="hero__wrapper">
           <motion.h1
-            initial={{ opacity: 0, x: -100, }}
-            animate={{ opacity: 1, x: 0, }}
+            initial={heroVariants.initial}
+            animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0 }}
             className="hero__title">Hi, my name is Predrag
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, x: -100, }}
-            animate={{ opacity: 1, x: 0, }}
+            initial={heroVariants.initial}
+            animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.15 }}
             className="hero__p">Let's make the internet interesting! I am eager to fulfill my potential as <span className="hero__span">lorem</span> and create outstanding websites that deliver an exceptional user experience.
           </motion.p>
 
           {/* icons */}
           <motion.article
-            initial={{ opacity: 0, x: -100, }}
-            animate={{ opacity: 1, x: 0, }}
+            initial={heroVariants.initial}
+            animate={heroVariants.animate}
             transition={{ duration: 0.5, delay: 0.30 }}
             className="hero__icons icons__global">
             {/* mapping over "heroMap" to create link imgs */}
-            {heroMap.map((item, index) => (
+            {/* {heroMap.map((item, index) => (
               <a key={index} href={item.linkUrl} target="_blank" rel="noopener noreferrer" className='hero__link' >
                 <Image src={item.heroImageUrl} className='hero__img' alt="image missing" width={45} height={45} />
               </a>
-            ))}
+            ))} */}
           </motion.article>
         </section>
 

@@ -2,25 +2,19 @@
 // MODIFY ANIMATIONS HERE AND NOWHERE ELSE.
 
 // animations for HERO section
-export const heroAnimationVariants = {
+export const heroVariants = {
     initial: {
         opacity: 0,
-        x: 100,
+        x: -100,
     },
-    animate: (index) => {
-        return {
-            opacity: 1,
-            x: 0,
-            transition: {
-                duration: 0.2,
-                delay: 0.05 * index,
-            }
-        }
+    animate: {
+        opacity: 1,
+        x: 0,
     },
 }
 
 // animations for SKILLS section
-export const skillsAnimationVariants = {
+export const skillsVariants = {
     initial: {
         opacity: 0,
         scale: 0,
@@ -38,7 +32,7 @@ export const skillsAnimationVariants = {
 }
 
 // animations for PROJECTS section
-export const projectsAnimationVariants = {
+export const projectsVariants = {
     initial: {
         opacity: 0,
         scale: 0,
@@ -56,7 +50,7 @@ export const projectsAnimationVariants = {
 }
 
 // GENERAL animations 
-export const generalAnimationVariants = {
+export const generalVariants = {
     initial: {
         y: 70,
         opacity: 0,

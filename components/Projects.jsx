@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 // animation imports
 import { motion } from "framer-motion"
-import { projectsAnimationVariants } from "../animations";
-import { generalAnimationVariants } from "../animations";
+import { projectsVariants } from "../animations";
+import { generalVariants } from "../animations";
 
 
 // data for map method
@@ -73,7 +73,7 @@ const projectsMap = [
 function Projects() {
     return (
         <motion.div
-            variants={generalAnimationVariants}
+            variants={generalVariants}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, }}>
@@ -89,7 +89,7 @@ function Projects() {
                         <motion.section
                             className="projects__item-global"
                             key={index}
-                            variants={projectsAnimationVariants}
+                            variants={projectsVariants}
                             initial="initial"
                             whileInView="animate"
                             viewport={{ once: true, }}

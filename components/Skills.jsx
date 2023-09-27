@@ -6,8 +6,8 @@ import Image from "next/image";
 
 // animation imports
 import { motion } from "framer-motion"
-import { skillsAnimationVariants } from "../animations";
-import { generalAnimationVariants } from "../animations";
+import { skillsVariants } from "../animations";
+import { generalVariants } from "../animations";
 
 
 // data for map method
@@ -27,7 +27,7 @@ const skillsMap = [
 function Skills() {
     return (
         <motion.div
-            variants={generalAnimationVariants}
+            variants={generalVariants}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, }}>
@@ -42,7 +42,7 @@ function Skills() {
                     {skillsMap.map((skill, index) => (
                         <motion.div
                             className="skills_card"
-                            variants={skillsAnimationVariants}
+                            variants={skillsVariants}
                             initial="initial"
                             whileInView="animate"
                             viewport={{ once: true, }}

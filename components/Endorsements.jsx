@@ -16,7 +16,7 @@ import { MdFormatQuote } from "react-icons/md";
 
 // animation imports
 import { motion } from "framer-motion"
-import { generalAnimationVariants } from "../animations";
+import { generalVariants } from "../animations";
 
 // data for map method
 const endorsementsMap = [
@@ -46,7 +46,7 @@ const endorsementsMap = [
 function Endorsements() {
     return (
         <motion.section
-            variants={generalAnimationVariants}
+            variants={generalVariants}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, }}

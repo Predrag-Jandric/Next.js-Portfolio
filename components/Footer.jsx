@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 // animation imports
 import { motion } from "framer-motion"
-import { generalAnimationVariants } from "../animations";
+import { generalVariants } from "../animations";
 
 // data for map method
 const footerMap = [
@@ -28,7 +28,7 @@ function Footer() {
     return (
         <footer className="footer">
             <motion.section
-                variants={generalAnimationVariants}
+                variants={generalVariants}
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true, }}

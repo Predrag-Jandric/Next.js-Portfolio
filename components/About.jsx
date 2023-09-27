@@ -6,7 +6,7 @@ import React from 'react'
 
 // animation imports
 import { motion } from "framer-motion"
-import { generalAnimationVariants } from "../animations";
+import { generalVariants } from "../animations";
 
 // images
 import devPhoto from '/public/assets/about/devPhoto.jpeg'
@@ -15,7 +15,7 @@ import devPhoto from '/public/assets/about/devPhoto.jpeg'
 function About() {
     return (
         <motion.div
-            variants={generalAnimationVariants}
+            variants={generalVariants}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, }}

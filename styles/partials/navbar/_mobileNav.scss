@@ -9,11 +9,11 @@
 
 
 .mobile__navbar {
-  @include position(fixed, 0, 0, 0, 0);
+  @include position(fixed, 0, 0, 0, auto);
     width: 400px;
     background: linear-gradient(to bottom, #21262c, #0B2132);
     padding-top: 100px;
-    transform: translateX(100vw);
+    transform: translateX(100%);
     will-change: transform;
     z-index: 101;
 

@@ -15,8 +15,7 @@
 ========= COMPONENTS ================
 
 * NAV
-- finish mobile nav stylisation
-- consider transparent bg on navbar and yellow links by default
+- finish navbar and make its bg transparent
 
 * HERO
 - add effect on a span that will change content every sec, like: "I am {lorem/ispus/dolor}" these words will change in their span container every second, find a way to achieve this 
