@@ -3,13 +3,17 @@
             PARTIALS
 -------------------------------*/
 
-@use 'partials/navbar';
+// @use 'partials/navbar';
 @use 'partials/hero';
 @use 'partials/about';
 @use 'partials/skills';
+@use 'partials/navbar';
+
 @use 'partials/projects';
 @use 'partials/footer';
 @use 'partials/endorsements';
+@use 'partials/mobileNav';
+
 
 
 // TESTING

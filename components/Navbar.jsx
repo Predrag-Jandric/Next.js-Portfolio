@@ -22,19 +22,7 @@ function Navbar() {
             <section className={`navbar__section ${isMobileActive ? 'active' : ''}`}>
                 <ul className="navbar__section__ul">
                     <li className="navbar__section__ul__li">
-
-                    <CustomScrollLink
-                            to="aboutAnchor"
-                            spy={true}
-                            smooth={true}
-                            offset={-180} 
-                            duration={300}
-                            className="navbar__section__ul__li__a"
-                        >
-                            about
-                        </CustomScrollLink>
-
-                        {/* <a href="#aboutAnchor" title="about" className="navbar__section__ul__li__a">about</a> */}
+                        <a href="#aboutAnchor" title="about" className="navbar__section__ul__li__a">about</a>
                     </li>
                     <li className="navbar__section__ul__li">
                         <a href="#" className="navbar__section__ul__li__a">projects</a>
@@ -46,12 +34,12 @@ function Navbar() {
             </section>
 
             {/* mobile version */}
-            <section onClick={handleClick} className='navbar__section__mobile'>
+            {/* <section onClick={handleClick} className='navbar__section__mobile'>
                 {isMobileActive ?
                     <MdOutlineMenu className='navbar__section__mobile__icon' />
                     : <MdOutlineClose className='navbar__section__mobile__icon' />
                 }
-            </section>
+            </section> */}
         </nav>
     )
 }
