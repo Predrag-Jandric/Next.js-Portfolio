@@ -17,13 +17,16 @@ function Navbar() {
                 <section className="navbar__section">
                     <ul className="navbar__section__ul">
                         <li className="navbar__section__ul__li">
-                            <a href="#aboutAnchor" title="about" className="navbar__section__ul__li__a">about</a>
+                            <a href="#" className="navbar__section__ul__li__a">Skills</a>
                         </li>
                         <li className="navbar__section__ul__li">
-                            <a href="#" className="navbar__section__ul__li__a">projects</a>
+                            <a href="#" className="navbar__section__ul__li__a">Projects</a>
                         </li>
                         <li className="navbar__section__ul__li">
-                            <a href="#" className="navbar__section__ul__li__a">contact</a>
+                            <a href="#" className="navbar__section__ul__li__a">Endorsements</a>
+                        </li>
+                        <li className="navbar__section__ul__li">
+                            <a href="#" className="navbar__section__ul__li__a">Questions</a>
                         </li>
                     </ul>
                 </section>

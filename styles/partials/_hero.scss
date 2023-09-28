@@ -8,10 +8,10 @@
 -------------------------------*/
 
 .hero {
-    height: 90vh;
+    height: 100vh;
     position: relative;
     background: url('../../public/assets/hero/hero-bg.jpeg') no-repeat center / cover;
-    z-index: 100;
+    // z-index: 100;
     overflow: hidden;
     @include flex(flex-start, center, row nowrap, 0);
     
@@ -19,7 +19,7 @@
         width: 55vw;
         margin-left: 8rem;
         z-index: 100;
-        // border: 1px solid blue;
+        // border: 1px solid red;
 
         @media(max-width:1200px){
             margin-left: 4rem;
@@ -33,10 +33,10 @@
         }
 
         .hero__title {
-            @include text(2.6rem, $yellow, $headers-font);
+            @include text(2.6rem, $primary, $headers-font);
 
             @media(max-width:768px){
-                @include text(2.2rem, $yellow, $headers-font);
+                @include text(2.2rem, $primary, $headers-font);
             }
         }
 
@@ -50,16 +50,24 @@
         }
 
         .hero__span {
-            color: $yellow;
+            color: $primary;
         }
     }
 
     &__earth {
-        @include position(absolute, 5%, auto, auto, 25%);
-        // border: 1px dotted gray;
+        // @include position(absolute, 5%, auto, auto, 25%);
+        z-index: 30;
+        border: 1px dotted red;
 
         @media(max-width:768px){
             display: none;
         }
+    }
+
+    &__star {
+        @include position(absolute, auto, auto, 80%, 90%);
+        width: 10rem;
+        z-index: 29;
+        
     }
 }

@@ -1,15 +1,18 @@
+
+// hamburger menu icon settings and properties
+
 export const Path = (props) => (
     <path
-        fill="#FFC654"
+        fill="#f1f1f1"
         strokeWidth="3"
-        stroke="#FFC654"
+        stroke="#f1f1f1"
         strokeLinecap="round"
         {...props}
     />
 );
 
 export const MenuToggleBtn = ({ toggle }) => (
-    <button onClick={toggle}>
+    <button className="menuToggleBtn" onClick={toggle}>
         <svg width="32" height="32" viewBox="0 0 23 18">
             <Path
                 d="M 2 2.5 L 20 2.5"

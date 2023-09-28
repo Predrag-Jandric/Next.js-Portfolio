@@ -36,7 +36,7 @@
                     content: '';
                     @include position(absolute, 120%, auto, auto, 0%);
                     @include width-height(5rem, 10%);
-                    background-color: $yellow;
+                    background-color: $primary;
                 }
             }
 
@@ -62,7 +62,7 @@
                     @include margin-padding(1rem 0 0 0, 1px 0);
                     width: 7.6rem;
                     cursor: pointer;
-                    border: 1px solid $yellow;
+                    border: 1px solid $primary;
 
                     &:focus {
                         border: 1px solid dimgray;
@@ -94,10 +94,10 @@
         line-height: 1.5rem;
 
         &__a {
-            @include text(1.05rem, $yellow);
+            @include text(1.05rem, $primary);
 
             &:hover {
-                color: $hover-yellow;
+                color: $primary-hover;
             }
         }
     }

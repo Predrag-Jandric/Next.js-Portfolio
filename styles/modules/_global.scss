@@ -33,11 +33,12 @@ img {
 
 // all yellow btns and their hovers
 .btn__global {
-    @include flex(center);
+    @include flex(center, center);
     border-radius: 3.125rem;
     position: relative;
     overflow: hidden;
-    background-color: $yellow;
+    // width: 10rem;
+    background-color: $primary;
 
     &::after {
         @include position(absolute, auto, auto, auto, -300%);
@@ -45,7 +46,7 @@ img {
         content: "";
         display: block;
         transform: rotate(45deg);
-        background-color: $hover-yellow;
+        background-color: $primary-hover;
         transition: all 0.3s ease-in-out;
     }
 
@@ -57,13 +58,13 @@ img {
 
     a {
         @include flex(center);
-        @include text(0.85rem, $gray-text, $text-font, normal, 3.125rem, 1px solid $yellow);
+        @include text(0.85rem, $gray-text, $text-font, normal, 3.125rem, 1px solid $primary);
         z-index: 30;
         padding: 9px 0;
         width: 10rem;
 
         &:hover {
-            border: 1px solid $hover-yellow;
+            border: 1px solid $primary-hover;
         }
 
         &:focus {
@@ -108,7 +109,7 @@ img {
         content: '';
         @include position(absolute, auto, auto, -20%, 50%);
         @include width-height(5rem, 8%);
-        background-color: $yellow;
+        background-color: $primary;
         transform: translate(-50%);
     }
 }
