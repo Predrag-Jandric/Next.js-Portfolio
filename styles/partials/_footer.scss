@@ -87,18 +87,14 @@
         }
     }
 
-    &__copyright {
-        @include text(0.7rem, $light-gray-text);
-        text-align: center;
-        margin-top: 1rem;
-        line-height: 1.5rem;
+    &__toTop {
+        color: $primary;
+        margin-top: 0.5rem;
+        transition: 150ms ease-in;
+        padding: 0.5rem;
 
-        &__a {
-            @include text(1.05rem, $primary);
-
-            &:hover {
-                color: $primary-hover;
-            }
+        &:hover {
+            color: $primary-hover;
         }
     }
 }

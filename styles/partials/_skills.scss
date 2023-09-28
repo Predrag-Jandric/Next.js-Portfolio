@@ -13,7 +13,7 @@
     padding: 4rem 0rem;
     background-color: $testing;
     
-    &_wrapper {
+    &__wrapper {
         @include grid(center, 2rem, 5);
         font-size: 1.1rem;
         text-align: center;
@@ -22,7 +22,7 @@
         grid-template-columns: repeat(2, 1fr); 
         }
 
-        .skills_card {
+        .skills__card {
             @include flex(center, center, column nowrap, 0);
             color: $white;
         }

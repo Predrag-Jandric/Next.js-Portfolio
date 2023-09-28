@@ -1,26 +1,20 @@
 ========== GENERAL ===================
-
-- 
-- refacture classnames that need to be refactured, in jsx and sass
-
-- make sure user gets custom screen when error happens. this will be done simply using nextJS routing
  
+- refacture classnames that need to be refactured, in jsx and sass
+- make sure user gets custom screen when error happens. this will be done simply using nextJS routing
 - replace all buttons perhaps
 - add icons to all btns
 - check how download resume btn in ABOUT section works
-- 
-- see whether to include section title in animation or not 
-
-
-
+ 
 ========= COMPONENTS ================
 
 * NAV === DO SOME FINE TUNING AND BUG FIXES
+- make anchor point jumps WORK with needed offset
 
 
 * HERO
 - add effect on a span that will change content every sec, like: "I am {lorem/ispus/dolor}" these words will change in their span container every second, find a way to achieve this 
-- add star like in old portfolio
+- add parallax on star like in old portfolio
 
 
 * ABOUT
@@ -41,7 +35,7 @@ dont forget to implement "thank-you page" that will let user know the msg in the
 
 ========== CHECKS BEFORE PRODUCTION ===========
 - make sure all <a> tags have rel="noopener noreferrer"
-- check whether all media queries are renamed to "rem" instead of "px"
+- check whether all media queries are in this format
+"@media screen and (max-width: 48rem)"
 - check how animations work on all sections
 - check paddings on X axis when resizing on most of the sections
-- ask mentor whether to use use "@media screen and" or just "@media"

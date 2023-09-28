@@ -70,11 +70,8 @@ function Footer() {
                 </article>
             </motion.section>
 
-            {/* "to top" */}
-            {/* <section className="footer__copyright">
-                <p className="footer__copyright__p">&copy; Copyright Predrag Jandric. All Rights Reserved</p> */}
-                <a className="footer__copyright__a" href="#">To Top</a>
-            {/* </section> */}
+            <a className="footer__toTop" href="#">To Top</a>
+
         </footer>
 
     )

@@ -36,12 +36,12 @@ function Skills() {
             <h2 className="section__title__global">Skills</h2>
 
             <section className="skills">
-                <article className="skills_wrapper">
+                <article className="skills__wrapper">
 
                     {/* mapping over "skillsMap" to create imgs and text */}
                     {skillsMap.map((skill, index) => (
                         <motion.div
-                            className="skills_card"
+                            className="skills__card"
                             variants={skillsVariants}
                             initial="initial"
                             whileInView="animate"
@@ -53,9 +53,9 @@ function Skills() {
                                 src={skill.skillsImageUrl}
                                 width={112} height={112}
                                 alt="image missing"
-                                className="skills_card_image"
+                                className="skills__card__image"
                             />
-                            <p className="skills_card_p">{skill.name}</p>
+                            <p className="skills__card__p">{skill.name}</p>
                         </motion.div>
                     ))}
 
