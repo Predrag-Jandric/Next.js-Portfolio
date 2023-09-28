@@ -20,9 +20,6 @@
 
 * [DATA]
 
-
-<sup> For all the packages used in the project, look inside "package.json"<sup>
-
 ---
 
 ## History of this Portfolio
@@ -33,8 +30,8 @@
 
 ## Languages and features 👨‍💻 
 
-- NextJS: routing, components, maps, functions..
-- Tailwind: for stylisation
+- NextJS: routing, components, maps, functions, useState, useEffect..
+- Sass: for stylisation
 - Framer Motion: for animations
 
 Thanks for checking out my portfolio.

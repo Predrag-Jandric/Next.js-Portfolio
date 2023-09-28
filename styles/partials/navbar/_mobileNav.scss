@@ -10,15 +10,24 @@
 .mobile__navbar {
   @include position(fixed, 0, 0, 0, auto);
     width: 400px;
-    background: linear-gradient(to bottom, #21262c, #0B2132);
+    background: #1a2934;
     padding-top: 100px;
     transform: translateX(100%);
     will-change: transform;
     z-index: 101;
 
+    @media screen and (max-width:25rem){
+      width: 100vw;
+    }
+
     &__ul {
       @include flex(flex-start, flex-start, column nowrap, 0.5rem);
       padding-left: 2rem;
+
+      @media screen and (max-width:25rem){
+        @include flex(center, center, column nowrap, 0.5rem);
+        padding-left: 0;
+      }
 
       &__li {
         color: $white;

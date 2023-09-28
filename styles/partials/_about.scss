@@ -21,7 +21,7 @@
         .about__content {
             @include flex(flex-start, flex-start, row nowrap, 3rem);
 
-            @media screen and (max-width:64rem) {
+            @media screen and (max-width:48rem) {
                 flex-direction: column;
             }
 
@@ -29,51 +29,31 @@
                 gap: 1.5rem;
             }
 
-            .about__item {
+            .about__img {
+                width: 12rem;
+                height: 12rem;
+                border-radius: 50%;
+                
 
-                &:first-child {
-                    @include flex(flex-start, center, row nowrap, 2rem);
-
-                    .about__img {
-                        width: 12rem;
-                        height: 12rem;
-                        border-radius: 50%;
-                    }
-
-                    @media screen and (max-width:30rem) {
-                        flex-direction: column;
-                        margin: 0px auto;
-                    }
-
-                    .about__personal-info {
-
-                        @media screen and (max-width:30rem) {
-                            text-align: center;
-                        }
-
-                        .about__p {
-                            margin-bottom: .8rem;
-                            font-weight: bold;
-
-                            span {
-                                font-weight: normal;
-                            }
-                        }
-                    }
+                @media screen and (max-width:30rem) {
+                    align-self: center
                 }
+            }
+
+            .about__item {
 
                 .about__title {
                     @include text(1.3rem, auto, $headers-font);
                     margin-bottom: 1rem;
-
+    
                     @media screen and (max-width:30rem) {
                         text-align: center;
                     }
                 }
-
+    
                 .about__desc {
                     line-height: 1.5;
-
+    
                     @media screen and (max-width:30rem) {
                         text-align: center;
                     }

@@ -39,3 +39,4 @@ dont forget to implement "thank-you page" that will let user know the msg in the
 "@media screen and (max-width: 48rem)"
 - check how animations work on all sections
 - check paddings on X axis when resizing on most of the sections
+- test navbar, especially mobile navbar version for all bug possibilities

@@ -51,7 +51,7 @@ function Skills() {
                         >
                             <Image
                                 src={skill.skillsImageUrl}
-                                width={112} height={112}
+                                width={110} height={110}
                                 alt="image missing"
                                 className="skills__card__image"
                             />

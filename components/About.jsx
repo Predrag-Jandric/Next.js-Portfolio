@@ -28,26 +28,9 @@ function About() {
                 <div className="about__wrapper">
 
                     <section className="about__content">
-                        <article className="about__item">
-                            <Image src={devPhoto} alt="image missing" className="about__img" />
 
-                            <div className="about__personal-info">
-                                <p className="about__p">
-                                    Name: <br /> <span className="about__span">Predrag Jandric</span>
-                                </p>
-                                <p className="about__p">
-                                    Email: <br />{" "}
-                                    <span className="about__span">
-                                        <a
-                                            className="link__properties__global"
-                                            href="mailto:predrag.jandric.bg@gmail.com"
-                                        >
-                                            predrag.jandric.<br />bg@gmail.com
-                                        </a>
-                                    </span>
-                                </p>
-                            </div>
-                        </article>
+                        <Image src={devPhoto} width={192} height={192} alt="image missing" className="about__img" />
+
 
                         <article className="about__item">
                             <h3 className="about__title">
