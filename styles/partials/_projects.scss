@@ -17,7 +17,7 @@
         background-color: transparent;
         margin: 0 1.3rem;
     
-        @media(max-width:1200px) {
+        @media screen and (max-width:75rem) {
             @include grid(center, 3rem, 1);
         }
     
@@ -30,7 +30,7 @@
             overflow: hidden;
             
 
-            @media(max-width:500px){
+            @media screen and (max-width:31.25rem){
                 width: 100%;
             }
 
@@ -61,7 +61,7 @@
                 @include flex(center, center, row nowrap, 1.8rem);
                 margin-bottom: 2.5rem;
 
-                @media(max-width:500px){
+                @media screen and (max-width:31.25rem){
                     @include flex(center, center, column nowrap, 1.5rem);
                 }
             }

@@ -1,21 +1,22 @@
 ========== GENERAL ===================
 
-- add rel="noopener noreferrer" to all <a> tags
+- 
 - refacture classnames that need to be refactured, in jsx and sass
+
 - make sure user gets custom screen when error happens. this will be done simply using nextJS routing
-- add new animations using framer motion on all sections
+ 
 - replace all buttons perhaps
 - add icons to all btns
 - check how download resume btn in ABOUT section works
-- reduce padding on X axis when resizing on most of the sections
+- 
 - see whether to include section title in animation or not 
-- use "@media screen and" or just "@media"
-- rename all "px" inside media queries into "rem"
+
+
 
 ========= COMPONENTS ================
 
-* NAV
-- finish navbar and make its bg transparent
+* NAV === DO SOME FINE TUNING AND BUG FIXES
+
 
 * HERO
 - add effect on a span that will change content every sec, like: "I am {lorem/ispus/dolor}" these words will change in their span container every second, find a way to achieve this 
@@ -36,3 +37,11 @@ redo some content
 ========= SPECIAL ================
 
 dont forget to implement "thank-you page" that will let user know the msg in the form has been sent
+
+
+========== CHECKS BEFORE PRODUCTION ===========
+- make sure all <a> tags have rel="noopener noreferrer"
+- check whether all media queries are renamed to "rem" instead of "px"
+- check how animations work on all sections
+- check paddings on X axis when resizing on most of the sections
+- ask mentor whether to use use "@media screen and" or just "@media"

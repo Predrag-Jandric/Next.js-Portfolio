@@ -18,7 +18,7 @@
     @include position(absolute, 0, 0, 0, 0);
 
 
-    @media(max-width:1200px){
+    @media screen and (max-width: 75rem){
         padding: 0rem 3rem;
     }
     
@@ -34,7 +34,7 @@
             @include flex(center, center, row nowrap, 0);
             transition: 200ms ease-in-out;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 48rem) {
                 display: none;
             }
 

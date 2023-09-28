@@ -21,11 +21,11 @@
         z-index: 100;
         // border: 1px solid red;
 
-        @media(max-width:1200px){
+        @media screen and (max-width:75rem){
             margin-left: 4rem;
         }
 
-        @media(max-width:768px){
+        @media screen and (max-width:48rem){
             @include flex(center, center, column nowrap, 0);
             width: 93%;
             text-align: center;
@@ -35,7 +35,7 @@
         .hero__title {
             @include text(2.6rem, $primary, $headers-font);
 
-            @media(max-width:768px){
+            @media screen and (max-width:48rem){
                 @include text(2.2rem, $primary, $headers-font);
             }
         }
@@ -44,7 +44,7 @@
             @include text(1.33rem, $white);
             margin: 1.5rem 0;
 
-            @media(max-width:768px){
+            @media screen and (max-width:48rem){
                 @include text(1.2rem, $white);
             }
         }
@@ -59,7 +59,7 @@
         z-index: 30;
         border: 1px dotted red;
 
-        @media(max-width:768px){
+        @media screen and (max-width:48rem){
             display: none;
         }
     }
