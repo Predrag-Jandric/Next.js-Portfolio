@@ -22,9 +22,7 @@
 
 ---
 
-## History of this Portfolio
 
-[DATA]
 
 ---
 
