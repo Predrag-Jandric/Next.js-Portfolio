@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 import { heroVariants } from '../animations'
 
 // import 
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 import Navbar from './navbar/Navbar';
 
 import star from '../public/assets/hero/star.png'
@@ -22,7 +22,8 @@ function Hero() {
     <>
 
 
-      <header className="hero">
+      {/* <header className={`hero ${isOpen ? "blur-effect" : ""}`}> */}
+      <header className='hero'>
       <Navbar />
         <section
           className="hero__wrapper">
@@ -43,6 +44,7 @@ function Hero() {
           initial={heroVariants.initial}
           animate={heroVariants.animate}
           transition={{ duration: 0.5, delay: 0.60 }}
+          // disabled={isOpen}
           className='btn__global'><a href="">Learn more</a>
           </motion.button>
 

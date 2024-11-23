@@ -1,10 +1,25 @@
+Endorsements section = DONE
+
+Footer section 
+- use 3rd party to make form functional
+- dont forget to implement "thank-you page" that will let user know the msg in the form has been sent
+
+====================
+TODAY TO WORK ON,
+implement a delay on hamburger icon to prevent user clicking multiple times and bugging the navbar animation 
+
+
 ========== GENERAL ===================
  
+Skills: html, css, JS, react, next, redux toolkit, sass, tailwind, git, styled components, framer motion
+
 - refacture classnames that need to be refactured, in jsx and sass
 - make sure user gets custom screen when error happens. this will be done simply using nextJS routing
-- replace all buttons perhaps
-- add icons to all btns
+- DESING: replace all buttons perhaps
+- DESING: add icons to all btns
 - check how download resume btn in ABOUT section works
+- update from create-react-app to vite to benefit in performance in production build
+- use framer motion to animate elements into view. look up this video https://youtu.be/znbCa4Rr054?si=Km3-gWiCZUXjMK6p at 39:20 timestamp
  
 ========= COMPONENTS ================
 
@@ -26,11 +41,14 @@ redo some content
 - in projects section add gifs so that when user hovers over a card gif becomes active
 
 * FOOTER
-- use 3rd party to make form functional
 
-========= SPECIAL ================
 
-dont forget to implement "thank-you page" that will let user know the msg in the form has been sent
+========= MISC ================
+
+- add Why I Code section to your github
+- add roadmap section to portfolio
+- explore jenkins and others (consult AI) for auto deployment
+- add emotional intelligence as strong point
 
 
 ========== CHECKS BEFORE PRODUCTION ===========
@@ -40,3 +58,8 @@ dont forget to implement "thank-you page" that will let user know the msg in the
 - check how animations work on all sections
 - check paddings on X axis when resizing on most of the sections
 - test navbar, especially mobile navbar version for all bug possibilities
+
+
+================== OTHER ================
+
+

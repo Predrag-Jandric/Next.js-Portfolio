@@ -7,6 +7,8 @@
         HERO SECTION
 -------------------------------*/
 
+
+
 .hero {
     height: 100vh;
     position: relative;
@@ -14,6 +16,7 @@
     // z-index: 100;
     overflow: hidden;
     @include flex(flex-start, center, row nowrap, 0);
+    // filter: blur(10px);
     
     &__wrapper {
         width: 55vw;
@@ -55,7 +58,7 @@
     }
 
     &__earth {
-        // @include position(absolute, 5%, auto, auto, 25%);
+        @include position(absolute, 5%, auto, auto, 25%);
         z-index: 30;
         border: 1px dotted red;
 
@@ -70,4 +73,9 @@
         z-index: 29;
         
     }
+}
+
+
+.blur-effect {
+    background-color: red;
 }

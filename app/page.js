@@ -8,7 +8,7 @@ import Hero from '../components/Hero'
 import TestingComp from '../components/TestingComp'
 import Endorsements from '../components/Endorsements'
 import { ParallaxProvider } from 'react-scroll-parallax'
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 export default function Home() {
   return (

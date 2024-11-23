@@ -9,20 +9,19 @@
 
 .mobile__navbar {
   @include position(fixed, 0, 0, 0, auto);
-    width: 400px;
+    width: 100%;
     background: #1a2934;
     padding-top: 100px;
     transform: translateX(100%);
     will-change: transform;
+    text-align: center;
     z-index: 101;
 
-    @media screen and (max-width:25rem){
-      width: 100vw;
-    }
 
     &__ul {
-      @include flex(flex-start, flex-start, column nowrap, 0.5rem);
+      @include flex(center, center, column nowrap, 0.5rem);
       padding-left: 2rem;
+      
 
       @media screen and (max-width:25rem){
         @include flex(center, center, column nowrap, 0.5rem);
