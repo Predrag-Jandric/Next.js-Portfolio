@@ -1,47 +1,32 @@
-Endorsements section = DONE
+Navbar and MOBILE navbar section = make anchor point jumps WORK with needed offset
+
+Hero section =
+- add effect on a span that will change content every sec, like: "I am {lorem/ispus/dolor}" these words will change in their span container every second, find a way to achieve this 
+- DESIGN: bg image needs changing
+- add 3d computer using spline library
+
+Skills section = NEEDS COMPLETE REWORK !
+include skills in html, css, JS, react, next, redux toolkit, sass, tailwind, git, styled components, framer motion
+
+About section = re-write content
+
+Projects section =
+- in projects section add gifs so that when user hovers over a card gif becomes active
+
+Endorsements section = re-write content 
 
 Footer section 
 - use 3rd party to make form functional
 - dont forget to implement "thank-you page" that will let user know the msg in the form has been sent
 
-====================
-TODAY TO WORK ON,
-implement a delay on hamburger icon to prevent user clicking multiple times and bugging the navbar animation 
-
+DESIGN: i need opinion about any section, typeface, buttons (maybe add icons to them), everything
 
 ========== GENERAL ===================
  
-Skills: html, css, JS, react, next, redux toolkit, sass, tailwind, git, styled components, framer motion
-
-- refacture classnames that need to be refactured, in jsx and sass
+- make every section 100vh to make anchor points and animations easier... ? scroll to automatically tip over the next section
 - make sure user gets custom screen when error happens. this will be done simply using nextJS routing
-- DESING: replace all buttons perhaps
-- DESING: add icons to all btns
 - check how download resume btn in ABOUT section works
-- update from create-react-app to vite to benefit in performance in production build
 - use framer motion to animate elements into view. look up this video https://youtu.be/znbCa4Rr054?si=Km3-gWiCZUXjMK6p at 39:20 timestamp
- 
-========= COMPONENTS ================
-
-* NAV === DO SOME FINE TUNING AND BUG FIXES
-- make anchor point jumps WORK with needed offset
-
-
-* HERO
-- add effect on a span that will change content every sec, like: "I am {lorem/ispus/dolor}" these words will change in their span container every second, find a way to achieve this 
-- add parallax on star like in old portfolio
-
-
-* ABOUT
-redo some content
-
-* === SKILLS SECTION DONE, DO FINAL CHECKS BEFORE PRODUCTION
-
-* PROJECTS
-- in projects section add gifs so that when user hovers over a card gif becomes active
-
-* FOOTER
-
 
 ========= MISC ================
 
@@ -60,6 +45,5 @@ redo some content
 - test navbar, especially mobile navbar version for all bug possibilities
 
 
-================== OTHER ================
 
 

@@ -1,78 +1,60 @@
-
 // modules used
-@use '../../modules/global' as *;
-@use '../../modules/mixins' as *;
-@use '../../modules/variables' as *; 
+@use "../../modules/global" as *;
+@use "../../modules/mixins" as *;
+@use "../../modules/variables" as *;
 
 /*-------------------------------
         NAVBAR SECTION
 -------------------------------*/
 
 .navbar {
-    @include flex(space-between, center, row nowrap, 0);
-    height: 10vh;
-    padding: 0rem 8rem;
-    width: 100vw;
-    // border: 1px dotted red; 
-    
-    @include position(absolute, 0, 0, 0, 0);
+  @include flex(center, center, row nowrap, 0);
+  height: 10vh;
+  padding: 0rem 8rem;
+  width: 100vw;
+//   border: 1px dotted red;
+  @include position(absolute, 0, 0, 0, 0);
 
+  @media screen and (max-width: 75rem) {
+    padding: 0rem 3rem;
+  }
 
-    @media screen and (max-width: 75rem){
-        padding: 0rem 3rem;
+  &__ul {
+    @include flex(center, center, row nowrap, 0);
+    transition: 200ms ease-in-out;
+
+    @media screen and (max-width: 48rem) {
+      display: none;
     }
-    
-    &__logo {
-        @include width-height(3.1rem, 3.1rem);
-        border-radius: $border-radius;
-        margin: 10px;
+
+    &__li {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      width: 100%;
+
+      &::before {
+        content: "";
+        @include position(absolute, 100%, auto, auto, 10%);
+        @include width-height(80%, 5%);
+        background: $primary;
+        z-index: -10;
+        transform: scale(0);
+        transition: 0.3s ease-in-out;
+      }
+
+      &:hover::before {
+        transform: scale(1);
+      }
+
+      &__a {
+        text-decoration: none;
+        color: $white;
+        padding: 10px 20px;
+        font-size: 1.3rem;
+        transition: 200ms ease-in-out;
+        cursor: pointer;
+      }
     }
-
-    &__section{
-
-        &__ul {
-            @include flex(center, center, row nowrap, 0);
-            transition: 200ms ease-in-out;
-
-            @media screen and (max-width: 48rem) {
-                display: none;
-            }
-
-            &__li {
-                position: relative;
-                z-index: 1;
-                display: flex;
-                width: 100%;
-
-                &::before {
-                    content: "";
-                    @include position(absolute, 100%, auto, auto, 10%);
-                    @include width-height(80%, 5%);
-                    background: $primary;
-                    z-index: -10;
-                    transform: scale(0);
-                    transition: 0.3s ease-in-out;
-                }
-
-                &:hover::before {
-                    transform: scale(1);
-                }
-
-                &__a {
-                    text-decoration: none;
-                    color: $white;
-                    padding: 10px 20px;
-                    font-size: 1.3rem;
-                    transition: 200ms ease-in-out;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+  }
 }
-
-
-
-
-
-

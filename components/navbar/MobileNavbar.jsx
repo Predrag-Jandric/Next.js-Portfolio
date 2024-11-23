@@ -77,7 +77,7 @@ function MobileNavbar() {
 
   const handleToggle = () => {
     if (clickable) {
-      setClickable(false);
+      setClickable(false); // Disable button temporarily
       setIsOpen(!isOpen);
 
       setTimeout(() => {
