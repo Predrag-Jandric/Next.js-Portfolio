@@ -1,26 +1,20 @@
-
 /*-------------------------------
             PARTIALS
 -------------------------------*/
 
 // @use 'partials/navbar';
-@use 'partials/hero';
-@use 'partials/about';
-@use 'partials/skills';
-@use 'partials/navbar/navbar';
-
-@use 'partials/projects';
-@use 'partials/footer';
-@use 'partials/endorsements';
-@use 'partials/navbar/mobileNav';
-
-
+@use "partials/hero";
+@use "partials/about";
+@use "partials/skills";
+@use "partials/navbar/navbar";
+@use "partials/navbar/mobileNav";
+@use "partials/projects";
+@use "partials/endorsements";
+@use "partials/faq";
+@use "partials/footer";
 
 // TESTING
 // @use 'partials/_testingComp';
 
-
-
-
 // styling for html page with the same name
-@use 'partials/thankYou';
+@use "partials/thankYou";

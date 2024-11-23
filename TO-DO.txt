@@ -3,7 +3,6 @@ Navbar and MOBILE navbar section = make anchor point jumps WORK with needed offs
 Hero section =
 - add effect on a span that will change content every sec, like: "I am {lorem/ispus/dolor}" these words will change in their span container every second, find a way to achieve this 
 - DESIGN: bg image needs changing
-- add 3d computer using spline library
 
 Skills section = NEEDS COMPLETE REWORK !
 include skills in html, css, JS, react, next, redux toolkit, sass, tailwind, git, styled components, framer motion
@@ -30,11 +29,12 @@ DESIGN: i need opinion about any section, typeface, buttons (maybe add icons to 
 
 ========= MISC ================
 
+ADD FAQ SECTION
+ADD ROADMAP SECTION
+
 - add Why I Code section to your github
-- add roadmap section to portfolio
 - explore jenkins and others (consult AI) for auto deployment
 - add emotional intelligence as strong point
-
 
 ========== CHECKS BEFORE PRODUCTION ===========
 - make sure all <a> tags have rel="noopener noreferrer"
