@@ -9,6 +9,7 @@ import TestingComp from "../components/TestingComp";
 import Endorsements from "../components/Endorsements";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Faq from "../components/Faq";
+import Roadmap from "../Roadmap";
 // import Spline from '@splinetool/react-spline';
 
 export default function Home() {
@@ -19,8 +20,9 @@ export default function Home() {
       {/* <Skills /> */}
       {/* <Projects /> */}
       <Endorsements />
-      <Faq />
-      <Footer />
+      <Roadmap />
+      {/* <Faq /> */}
+      {/* <Footer /> */}
 
       {/* <TestingComp/> */}
     </>

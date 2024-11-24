@@ -4,7 +4,7 @@ import react from "./public/assets/skills/react.png";
 import { HiArrowLongRight } from "react-icons/hi2";
 import Image from "next/image";
 
-function Test() {
+function Roadmap() {
   const phases = [
     { title: "Learn React", image: js, time: "next 2 months" },
     { title: "Learn Next.js", image: sass, time: "next 6 months" },
@@ -12,22 +12,22 @@ function Test() {
   ];
 
   return (
-    <div>
-      <div>
+    <div className="test1">
+      <div className="test2">
         {phases.map((phase, index) => (
-          <article key={index}>
+          <article key={index} className="roadmap__container">
             {/* Phase Content */}
-            <div>
+            <div className="roadmap__container__item">
               {/* Time */}
-              <p>{phase.time}</p>
+              <p className="roadmap__container__item__time">{phase.time}</p>
               {/* Image */}
-              <Image src={phase.image} alt={phase.title} />
+              <Image className="roadmap__container__item__image" src={phase.image} alt={phase.title} />
               {/* Title */}
-              <p>{phase.title}</p>
+              <p className="roadmap__container__item__title">{phase.title}</p>
             </div>
 
             {/* Arrow */}
-            {index < phases.length - 1 && <HiArrowLongRight />}
+            {index < phases.length - 1 && <HiArrowLongRight className="roadmap__arrow"  />}
           </article>
         ))}
       </div>
@@ -35,4 +35,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default Roadmap;

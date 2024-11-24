@@ -32,7 +32,7 @@ function Hero() {
           transition={{ duration: 0.5, delay: 0.45 }}
           className="hero__p"
         >
-          Let's make the internet interesting! I am eager to fulfill my
+          Let&apos;s make the internet interesting! I am eager to fulfill my
           potential as <span className="hero__span">lorem</span> and create
           outstanding websites that deliver an exceptional user experience.
         </motion.p>
