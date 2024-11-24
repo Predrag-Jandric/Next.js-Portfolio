@@ -22,14 +22,12 @@ DESIGN: i need opinion about any section, typeface, buttons (maybe add icons to 
 
 ========== GENERAL ===================
  
-- make every section 100vh to make anchor points and animations easier... ? scroll to automatically tip over the next section
 - make sure user gets custom screen when error happens. this will be done simply using nextJS routing
 - check how download resume btn in ABOUT section works
 - use framer motion to animate elements into view. look up this video https://youtu.be/znbCa4Rr054?si=Km3-gWiCZUXjMK6p at 39:20 timestamp
 
 ========= MISC ================
 
-ADD FAQ SECTION
 ADD ROADMAP SECTION
 
 - add Why I Code section to your github
