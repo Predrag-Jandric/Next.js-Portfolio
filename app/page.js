@@ -7,22 +7,21 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import TestingComp from "../components/TestingComp";
 import Endorsements from "../components/Endorsements";
-import { ParallaxProvider } from "react-scroll-parallax";
 import Faq from "../components/Faq";
-import Roadmap from "../Roadmap";
-// import Spline from '@splinetool/react-spline';
+import Roadmap from "../components/Roadmap";
+
 
 export default function Home() {
   return (
     <>
       <Hero />
-      {/* <About /> */}
-      {/* <Skills /> */}
-      {/* <Projects /> */}
-      <Endorsements />
+      <About />
+      <Skills />
+      <Projects />
       <Roadmap />
-      {/* <Faq /> */}
-      {/* <Footer /> */}
+      <Endorsements />
+      <Faq />
+      <Footer />
 
       {/* <TestingComp/> */}
     </>

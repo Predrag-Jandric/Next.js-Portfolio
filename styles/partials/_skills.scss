@@ -11,7 +11,7 @@
 .skills {
     @include flex(center, center, column nowrap, 4rem);
     padding: 4rem 0rem;
-    background-color: $testing;
+    background-color: $dark;
     
     &__wrapper {
         @include grid(center, 2rem, 5);

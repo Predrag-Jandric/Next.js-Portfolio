@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import logo from "/public/assets/navbar/logo.jpeg";
+
 import MobileNavbar from "./MobileNavbar";
 
 function Navbar() {

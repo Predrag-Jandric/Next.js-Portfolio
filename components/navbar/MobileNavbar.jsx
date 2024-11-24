@@ -82,7 +82,7 @@ function MobileNavbar() {
 
       setTimeout(() => {
         setClickable(true);
-      }, 1100);
+      }, 1000);
     }
   };
 
